@@ -2,65 +2,27 @@
   box-sizing: border-box;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: auto;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  gap: 20px;
-  justify-content: center;
-}
-
-.container_navigation {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 10px;
-}
-
-.container_navigation_button {
-  border: 2px solid black;
-  border-radius: 10px;
-  font-size: 1.5rem;
-}
-
-#search_engine {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 500px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.main {
+  font-family: sans-serif;
   text-align: center;
-  align-items: center;
-  border: 5px solid rgb(0, 94, 255);
-  border-radius: 100%;
-  background-color: rgb(114, 209, 250);
-  min-width: 400px;
-  min-height: 400px;
-  font-size: 20px;
 }
 
-input {
-  width: 300px;
-  min-height: 50px;
-  border-radius: 15px;
+.strip {
+  background-color: white;
+  position: absolute;
 }
-#vyhodiť {
-  width: 150px;
-  min-height: 50px;
-  border-radius: 15px;
-  font-size: 20px;
+.strip__one {
+  left: 20%;
+  width: 20rem;
+  height: 100%;
 }
-#manual,
-#kombinácie-zberu {
-  display: flex;
-  flex-direction: column;
-  justify-content: baseline;
-  text-align: center;
+.strip__two {
+  right: 15%;
+  width: 20rem;
+  height: 100%;
+}
+.strip__three {
+  left: 15%;
+  width: 20rem;
+  height: 100%;
 }
