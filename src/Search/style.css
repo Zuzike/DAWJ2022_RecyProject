@@ -1,0 +1,40 @@
+.search {
+  background-image: url('./img/dust_bin.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+img {
+  width: 100%;
+}
+.search__variations,
+.search__form {
+  border: 1px black solid;
+  border-radius: 15px;
+  min-width: 20rem;
+  max-width: 50%;
+  height: 80%;
+  background-color: white;
+  margin: auto;
+}
+
+.search__bar {
+  display: flex;
+  width: 100px;
+  margin: 2rem;
+}
+
+.search__icon {
+  max-width: 100%;
+}
+.search__input {
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-bottom: 3px black solid;
+  line-height: 3rem;
+  margin: auto;
+}
