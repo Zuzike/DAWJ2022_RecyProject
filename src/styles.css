@@ -1,15 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+
 * {
   box-sizing: border-box;
 }
 
 .main {
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
 
 .strip {
   background-color: white;
   position: absolute;
+  max-width: 8rem;
+  /* max-height: 25rem; */
+  font-size: 8px;
 }
 .strip__one {
   left: 20%;
