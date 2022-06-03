@@ -6,12 +6,13 @@ module.exports = {
   entry: './src/index.jsx',
   devtool: 'eval-source-map',
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, 'public'),
     filename: 'bundle.js',
     assetModuleFilename: 'img/[name]-[hash:6].[ext]',
   },
   devServer: {
     historyApiFallback: true,
+    static: path.join(__dirname, 'public'),
   },
   resolve: {
     extensions: ['.js', '.jsx'],
@@ -34,14 +35,16 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|svg|gif)$/,
-        type: 'asset/resource'
-      }
+        type: 'asset/resource',
+      },
     ],
   },
   plugins: [
     new CopyPlugin({
       patterns: [
-        { from: 'public', to: '', noErrorOnMissing: true },
+        { from: 'src/assets', to: 'assets', noErrorOnMissing: true },
+        { from: 'src/favicon.ico', to: '', noErrorOnMissing: true },
+        { from: 'src/index.html', to: '' },
       ],
     }),
   ],

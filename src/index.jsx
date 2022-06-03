@@ -8,16 +8,16 @@ import img3 from './img/water_pipe.jpg';
 
 const App = () => (
   <div className="main">
-    <Parallax bgImage={img1} strength={500}>
-      <div style={{ height: 500 }}>
+    <Parallax bgImage={img1} strength={300}>
+      <div style={{ height: 800 }}>
         <div className="strip strip__one">
           <h1 className="strip__title">Návod </h1>
         </div>
       </div>
     </Parallax>
     <h2>| | |</h2>
-    <Parallax bgImage={img2} blur={{ min: -1, max: 3 }}>
-      <div style={{ height: 500 }}>
+    <Parallax bgImage={img2} strength={300}>
+      <div style={{ height: 600 }}>
         <div className="strip strip__two">
           {' '}
           <h1 className="strip__title">Päť pravidiel recyklácie</h1>
@@ -26,7 +26,7 @@ const App = () => (
     </Parallax>
     <h2>| | |</h2>
     <Parallax bgImage={img3} strength={-100}>
-      <div style={{ height: 500 }}>
+      <div style={{ height: 700 }}>
         <div className="strip strip__three">
           <h1 className="strip__title">Niečo zmysluplné</h1>
         </div>
