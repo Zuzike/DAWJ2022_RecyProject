@@ -6,6 +6,7 @@ import img1 from './img/buckets.jpg';
 import img2 from './img/bird_trash.jpg';
 import img3 from './img/water_pipe.jpg';
 import { Icon } from './Rules';
+import { Search } from './Search';
 
 const App = () => (
   <div className="main">
@@ -22,7 +23,7 @@ const App = () => (
         </div>
       </div>
     </Parallax>
-    <h2>| | |</h2>
+    <Search />
     <Parallax bgImage={img2} strength={300}>
       <div style={{ height: 500 }}>
         <div className="strip strip__two">
@@ -31,6 +32,7 @@ const App = () => (
         </div>
       </div>
     </Parallax>
+
     <h2>| | |</h2>
     <Parallax bgImage={img3} strength={-100}>
       <div style={{ height: 700 }}>
@@ -40,29 +42,7 @@ const App = () => (
       </div>
     </Parallax>
     <h2>| | |</h2>
-    <Parallax strength={500}>
-      <Background className="custom-bg">
-        <div
-          style={{
-            height: 2000,
-            width: 2000,
-            backgroundImage: "url('https://i.imgur.com/8CV5WAB.png')",
-          }}
-        />
-      </Background>
-      <div>
-        <br />
-        custom background component
-        <br />
-        <br />
-        custom background component
-        <br />
-        <br />
-        custom background component
-        <br />
-        <br />
-      </div>
-    </Parallax>
+    <Parallax strength={500}></Parallax>
     <div style={{ height: 500 }} />
     <h2>{'\u2728'}</h2>
   </div>
