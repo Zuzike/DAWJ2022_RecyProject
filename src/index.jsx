@@ -9,6 +9,7 @@ import { Rules } from './Rules';
 import { Search } from './Search';
 import { Navigation } from './Navigation';
 import { Scrollspy } from '@makotot/ghostui';
+import { Variations } from './Variations';
 
 const App = () => {
   const sectionRefs = [
@@ -41,6 +42,7 @@ const App = () => {
             </Parallax>
           </section>
           <section ref={sectionRefs[1]} id="search">
+            <Variations />
             <Search />
           </section>
           <section ref={sectionRefs[2]} id="rules">

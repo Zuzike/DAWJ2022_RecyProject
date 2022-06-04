@@ -1,16 +1,6 @@
-.search {
-  background-image: url('./img/dust_bin.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-x: right;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-}
 img {
   width: 100%;
 }
-.search__variations,
 .search__form {
   border: 1px black solid;
   border-radius: 15px;
