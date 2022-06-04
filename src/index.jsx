@@ -48,7 +48,7 @@ const App = () => {
           <section ref={sectionRefs[1]} id="search" className="search">
             <Variations group={group} onChangeGroup={setGroup} />
 
-            <Search />
+            <Search group={group} />
           </section>
           <section ref={sectionRefs[2]} id="rules">
             <Parallax bgImage={img2} strength={300}>
