@@ -6,95 +6,159 @@ export const ResultItem = ({ type, group }) => {
   if (type === 'papier') {
     return (
       <>
-        <img src={bin2} alt="smetna nadoba ikona modrá" />
-        <p>Papier</p>
+        <div className="search__result--bin">
+          <img src={bin2} alt="smetna nadoba ikona modrá" />
+          <p>Papier</p>
+        </div>
+        <div className="search__result--notes"></div>
       </>
     );
   }
   if (type === 'sklo') {
     return (
       <>
-        <img src={bin2} alt="smetna nadoba ikona zelená" />
-        <p>Sklo</p>
+        <div className="search__result--bin">
+          <img src={bin2} alt="smetna nadoba ikona zelená" />
+          <p>Sklo</p>
+        </div>
+        <div className="search__result--notes"></div>
       </>
     );
   }
   if (type === 'plasty') {
     return (
       <>
-        <img src={bin2} alt="smetna nadoba ikona žltá" />
-        <p>Plast</p>
+        <div className="search__result--bin">
+          <img src={bin2} alt="smetna nadoba ikona žltá" />
+          <p>Plast</p>
+        </div>
+        <div className="search__result--notes"></div>
       </>
     );
   }
   if (type === 'kuchynský bioodpad') {
     return (
       <>
-        <img src={bin2} alt="smetna nadoba ikona hnedá" />
-        <p>Kuchynský bioodpad</p>
+        <div className="search__result--bin">
+          <img src={bin2} alt="smetna nadoba ikona hnedá" />
+          <p>Kuchynský bioodpad</p>
+        </div>
+        <div className="search__result--notes"></div>
       </>
     );
   }
   if (type === 'záhradný bioodpad') {
     return (
       <>
-        <img src={bin2} alt="smetna nadoba ikona hnedá" />
-        <p>Záhradný bioodpad</p>
+        <div className="search__result--bin">
+          <img src={bin2} alt="smetna nadoba ikona hnedá" />
+          <p>Záhradný bioodpad</p>
+        </div>
       </>
     );
   }
   if (type === 'kompost') {
     return (
       <>
-        <img src={bin2} alt="smetna nadoba ikona hnedá" />
-        <p>Kompost</p>
+        {' '}
+        <div>
+          <img src={bin2} alt="smetna nadoba ikona hnedá" />
+          <p>Kompost</p>
+        </div>
+        <div className="search__result--notes"></div>
       </>
     );
   }
   if (type === 'jedlé oleje a tuky') {
     return (
       <>
-        <img src={bin2} alt="smetna nadoba ikona čierna" />
-        <p>Jedlé oleje a tuky</p>
+        <div>
+          <img src={bin2} alt="smetna nadoba ikona čierna" />
+          <p>Jedlé oleje a tuky</p>
+        </div>
+        <div className="search__result--notes"></div>
       </>
     );
   }
   if (type === 'zberný dvor') {
     return (
       <>
-        <img src={bin2} alt="ikona dvor" />
-        <p>Zberný dvor</p>
+        <div className="search__result--bin">
+          <img src={bin2} alt="ikona dvor" />
+          <p>Zberný dvor</p>
+        </div>
+        <div className="search__result--notes"></div>
       </>
     );
   }
   if (type === 'textil') {
     return (
-      <>
+      <div className="search__result--bin">
         <img src={bin2} alt="smetna nadoba ikona fialová" />
         <p>Textil</p>
-      </>
+      </div>
     );
   }
-  if (type === 'nápojové kartóny' && group === 'A/D') {
+  if (type === 'nápojové kartóny' && (group === 'A/D' || group === C)) {
     return (
-      <>
+      <div>
         <img src={bin2} alt="smetna nadoba ikona " />
         <p>Plast/Kovy</p>
-      </>
+      </div>
     );
   }
   if (type === 'nápojové kartóny' && (group === 'B' || group === 'E')) {
     return (
       <>
-        <img src={bin2} alt="smetna nadoba ikona oranžová " />
-        <p>Nápojové kartóny</p>
+        <div>
+          <img src={bin2} alt="smetna nadoba ikona oranžová " />
+          <p>Nápojové kartóny</p>
+        </div>
+        <div className="search__result--notes"></div>
       </>
     );
   }
+  if ((type === 'nápojové kartóny' || type === 'kovy') && group === 'C') {
+    return (
+      <>
+        <div>
+          <img src={bin2} alt="smetna nadoba ikona žltá" />
+          <p>Plast</p>
+        </div>
+        <div className="search__result--notes"></div>
+      </>
+    );
+  }
+  if ((type = 'kovy' && group === 'B')) {
+    return (
+      <>
+        <div className="search__result--bin">
+          <img src={bin2} alt="smetna nadoba ikona žltá" />
+          <p>Plast</p>
+        </div>
+        <div className="search__result--notes"></div>
+      </>
+    );
+  }
+  if ((type = 'kovy' && (group === 'E' || group === 'A/D'))) {
+    return (
+      <>
+        <div className="search__result--bin">
+          <img src={bin2} alt="smetna nadoba ikona červená" />
+          <p>Kovy</p>
+        </div>
+        <div className="search__result--notes"></div>
+      </>
+    );
+  }
+
   return (
     <>
-      <img src={bin2} alt="smetná nadoba ikona šedá" />
-      <p>Zmiešaný odpad</p>
+      <div className="search__result--bin">
+        <img src={bin2} alt="smetná nadoba ikona šedá" />
+        <p>Zmiešaný odpad</p>
+      </div>
+      <div className="search__result--notes"></div>
     </>
   );
 };

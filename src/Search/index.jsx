@@ -14,11 +14,9 @@ export const Search = ({ group }) => {
   const [result, setResult] = useState();
 
   const onChange = (option) => {
-    console.log('vybery', option);
     setResult(option.type);
   };
 
-  console.log('moje polia:', options);
   return (
     <>
       <section className="search__form">

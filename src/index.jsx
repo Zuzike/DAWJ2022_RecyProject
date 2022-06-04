@@ -61,7 +61,6 @@ const App = () => {
             </Parallax>
           </section>
           <section ref={sectionRefs[3]} id="containers">
-            <h2>| | |</h2>
             <Containers />
           </section>
           <Parallax bgImage={img3} strength={-100}>
@@ -72,11 +71,18 @@ const App = () => {
             </div>
           </Parallax>
 
-          <h2>| | |</h2>
           <section ref={sectionRefs[4]} id="footer">
-            <Parallax strength={500}></Parallax>
+            <Parallax strength={500}>
+              <div className="footer">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Sapiente ipsa deserunt repudiandae, porro nam magni quidem
+                  consequatur nesciunt. Iure inventore magni quasi, voluptatibus
+                  deleniti accusamus sunt quos laborum porro ab.
+                </p>
+              </div>
+            </Parallax>
             <div style={{ height: 500 }} />
-            <h2>{'\u2728'}</h2>
           </section>
         </div>
       )}
