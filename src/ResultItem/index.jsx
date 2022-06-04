@@ -78,12 +78,19 @@ export const ResultItem = ({ type, group }) => {
   if (type === 'nápojové kartóny' && group === 'A/D') {
     return (
       <>
-        <img src={bin2} alt="smetna nadoba ikona fialová" />
+        <img src={bin2} alt="smetna nadoba ikona " />
         <p>Plast/Kovy</p>
       </>
     );
   }
-
+  if (type === 'nápojové kartóny' && (group === 'B' || group === 'E')) {
+    return (
+      <>
+        <img src={bin2} alt="smetna nadoba ikona oranžová " />
+        <p>Nápojové kartóny</p>
+      </>
+    );
+  }
   return (
     <>
       <img src={bin2} alt="smetná nadoba ikona šedá" />
