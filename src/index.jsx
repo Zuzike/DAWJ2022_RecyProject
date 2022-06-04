@@ -1,7 +1,8 @@
-import React, { useRef } from 'react';
+import React, { useState, useRef } from 'react';
+
 import { createRoot } from 'react-dom/client';
 import './styles.css';
-import { Parallax, Background } from 'react-parallax';
+import { Parallax } from 'react-parallax';
 import img1 from './img/buckets.jpg';
 import img2 from './img/bird_trash.jpg';
 import img3 from './img/water_pipe.jpg';
@@ -13,6 +14,8 @@ import { Variations } from './Variations';
 import { Containers } from './Containers';
 
 const App = () => {
+  const [group, setGroup] = useState('');
+
   const sectionRefs = [
     useRef(null),
     useRef(null),
@@ -42,8 +45,9 @@ const App = () => {
               </div>
             </Parallax>
           </section>
-          <section ref={sectionRefs[1]} id="search">
-            <Variations />
+          <section ref={sectionRefs[1]} id="search" className="search">
+            <Variations group={group} onChangeGroup={setGroup} />
+
             <Search />
           </section>
           <section ref={sectionRefs[2]} id="rules">
