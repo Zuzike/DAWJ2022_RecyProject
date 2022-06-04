@@ -1,4 +1,4 @@
-const data = [
+export const data = [
   {
     type: 'papier',
     list: [
@@ -310,6 +310,7 @@ const data = [
       'škatuľa od džúsu',
       'škatuľa od smotany na šľahanie',
       'škatuľa od vína',
+      'tetrapack',
     ],
 
     symbols: ['C/PAP', 'C', 'PAP', '80', '81', '84'],
@@ -788,7 +789,7 @@ const data = [
     symbols: [],
 
     notes: [
-      'Znovu použiteľné blečenie, či obuv vhadzujeme do zberných nádob čisté, suché, zaviazané v čistom plastovom vreci (bude to použité buď na charitu, do secondhandov, alebo zrecyklované na iný produkt, napr. izolácie atď.)',
+      'Znovu použiteľné oblečenie, či obuv vhadzujeme do zberných nádob čisté, suché, zaviazané v čistom plastovom vreci (bude to použité buď na charitu, do secondhandov, alebo zrecyklované na iný produkt, napr. izolácie atď.)',
     ],
   },
 
@@ -864,6 +865,8 @@ const data = [
       'mačacie výkaly',
       'piliny z drevotriesky',
       'drevotrieska',
+      'rúž',
+      'špirála',
     ],
 
     symbols: [],

@@ -13,8 +13,9 @@ img {
 
 .search__bar {
   display: flex;
-  width: 100px;
+  width: 100%;
   margin: 2rem;
+  text-align: left;
 }
 
 .search__icon {
@@ -27,4 +28,5 @@ img {
   border-bottom: 3px black solid;
   line-height: 3rem;
   margin: auto;
+  width: 100%;
 }

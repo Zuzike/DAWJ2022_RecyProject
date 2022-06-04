@@ -1,14 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './styles.css';
-import lupa from './img/lupa.png';
+import Select from 'react-select';
+import { data } from '../../data';
+import { ResultItem } from '../ResultItem';
 
-export const Search = () => {
+const options = data
+  .map((value) =>
+    value.list.map((item) => ({ value: item, label: item, type: value.type })),
+  )
+  .flatMap((a) => a);
+
+export const Search = ({ group }) => {
+  const [result, setResult] = useState();
+
+  const onChange = (option) => {
+    console.log('vybery', option);
+    setResult(option.type);
+  };
+
+  console.log('moje polia:', options);
   return (
     <>
       <section className="search__form">
         <div className="search__bar">
-          <input className="search__input" type="input"></input>
-          <img className="search__icon" src={lupa} alt="lupa" />
+          <Select
+            className="search__input"
+            options={options}
+            onChange={onChange}
+          />
+
+          {/*<img className="search__icon" src={lupa} alt="lupa" />*/}
+        </div>
+        <div className="search__result">
+          <ResultItem type={result} group={group} />
         </div>
       </section>
     </>
