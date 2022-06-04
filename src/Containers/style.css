@@ -1,0 +1,21 @@
+.containers {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 40px;
+  width: 15%;
+  margin: 60px;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
