@@ -6,6 +6,7 @@ import img1 from './img/buckets.jpg';
 import img2 from './img/bird_trash.jpg';
 import img3 from './img/water_pipe.jpg';
 import { Search } from './Search';
+import { Variations } from './Variations';
 
 const App = () => (
   <div className="main">
@@ -16,7 +17,10 @@ const App = () => (
         </div>
       </div>
     </Parallax>
-    <Search />
+    <div className="search">
+      <Variations />
+      <Search />
+    </div>
     <Parallax bgImage={img2} strength={300}>
       <div style={{ height: 600 }}>
         <div className="strip strip__two">
