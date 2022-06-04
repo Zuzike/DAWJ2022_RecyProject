@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 
-export const Icon = (props) => {
+export const Rules = (props) => {
   return (
     <>
       <div className="rules">

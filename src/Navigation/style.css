@@ -1,0 +1,35 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  width: 100%;
+}
+
+.navbar_buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+}
+
+.navbar_button {
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  background-color: rgb(249, 249, 235);
+  border: 2px solid beige;
+  border-radius: 10px;
+}
+
+.navbar_logo {
+  font-size: 30px;
+  margin-left: 30px;
+}
+
+.activeIndex {
+  background-color: rgb(242, 152, 152);
+}

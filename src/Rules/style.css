@@ -52,7 +52,7 @@
 
 @media (min-width: 1200px) {
   .strip {
-    max-width: 30rem;
+    max-width: 50rem;
     font-size: 12px;
   }
 }
