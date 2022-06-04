@@ -4,7 +4,7 @@ img {
 .search__form {
   border: 1px black solid;
   border-radius: 15px;
-  min-width: 20rem;
+  min-width: 30%;
   max-width: 50%;
   height: 80%;
   background-color: white;
