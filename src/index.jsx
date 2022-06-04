@@ -11,6 +11,7 @@ import { Search } from './Search';
 import { Navigation } from './Navigation';
 import { Scrollspy } from '@makotot/ghostui';
 import { Variations } from './Variations';
+import { Containers } from './Containers';
 
 const App = () => {
   const [group, setGroup] = useState('');
@@ -59,17 +60,18 @@ const App = () => {
               </div>
             </Parallax>
           </section>
-
-          <h2>| | |</h2>
           <section ref={sectionRefs[3]} id="containers">
-            <Parallax bgImage={img3} strength={-100}>
-              <div style={{ height: 700 }}>
-                <div className="strip strip__three">
-                  <h1 className="strip__title">Niečo zmysluplné</h1>
-                </div>
-              </div>
-            </Parallax>
+            <h2>| | |</h2>
+            <Containers />
           </section>
+          <Parallax bgImage={img3} strength={-100}>
+            <div style={{ height: 700 }}>
+              <div className="strip strip__three">
+                <h1 className="strip__title">Niečo zmysluplné</h1>
+              </div>
+            </div>
+          </Parallax>
+
           <h2>| | |</h2>
           <section ref={sectionRefs[4]} id="footer">
             <Parallax strength={500}></Parallax>
