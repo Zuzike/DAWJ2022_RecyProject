@@ -55,12 +55,7 @@ const App = () => {
           </section>
           <h1> </h1>
           <section ref={sectionRefs[2]} id="rules">
-            <Parallax
-              bgImage={imgrules}
-              strength={300}
-              //style={{ minHeight: 1300 }}
-            >
-              {/* <div> */}
+            <Parallax bgImage={imgrules} strength={300}>
               <div className="strip strip__two">
                 {' '}
                 <Rules />
@@ -68,15 +63,12 @@ const App = () => {
               <div className="buble buble__two">
                 <Bubles position="left" />
               </div>
-              {/* </div> */}
             </Parallax>
           </section>
           <h1> </h1>
           <section ref={sectionRefs[3]} id="containers">
             <Parallax bgImage={imgcontainers} strength={300}>
-              {/* <div style={{ height: 1300 }}> */}
               <Containers />
-              {/* </div> */}
             </Parallax>
             <h1> </h1>
           </section>
