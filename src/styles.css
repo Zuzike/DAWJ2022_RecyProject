@@ -35,3 +35,8 @@
   height: 100vh;
   display: flex;
 }
+.footer__bottom {
+  background-color: bisque;
+  opacity: 0.5;
+  margin: 0;
+}

@@ -1,0 +1,10 @@
+.footer {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.footer__right,
+.footer__left {
+  width: 50%;
+}
