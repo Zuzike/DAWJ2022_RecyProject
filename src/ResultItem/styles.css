@@ -1,4 +1,10 @@
 .search__result--notes {
-  height: 20px;
-  width: 30px;
+  flex: 1;
+  padding: 2rem;
+  flex-grow: 2;
+}
+
+.search__result--bin {
+  flex: 1;
+  padding: 2rem;
 }

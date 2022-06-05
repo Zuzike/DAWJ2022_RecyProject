@@ -27,7 +27,7 @@ export const Search = ({ group }) => {
             onChange={onChange}
           />
         </div>
-        <div className="search__result">
+        <div className="search__field">
           <ResultItem type={result} group={group} />
         </div>
       </section>
