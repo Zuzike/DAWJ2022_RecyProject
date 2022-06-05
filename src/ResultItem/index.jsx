@@ -10,7 +10,14 @@ export const ResultItem = ({ type, group }) => {
           <img src={bin2} alt="smetna nadoba ikona modrá" />
           <p>Papier</p>
         </div>
-        <div className="search__result--notes"></div>
+        <div className="search__result--notes">
+          <p className="search__result--">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus
+            quia animi cumque sed suscipit assumenda nisi non magni soluta dicta
+            et eum cupiditate voluptas, tenetur error doloremque nihil
+            architecto alias.
+          </p>
+        </div>
       </>
     );
   }

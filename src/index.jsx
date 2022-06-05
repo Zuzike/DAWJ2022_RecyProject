@@ -41,11 +41,12 @@ const App = () => {
               </div>
             </Parallax>
           </section>
+
           <section ref={sectionRefs[1]} id="search" className="search">
             <Variations group={group} onChangeGroup={setGroup} />
-
             <Search group={group} />
           </section>
+
           <section ref={sectionRefs[2]} id="rules">
             <Parallax bgImage={img2} strength={300}>
               <div style={{ height: 800 }}>
@@ -59,22 +60,21 @@ const App = () => {
               </div>
             </Parallax>
           </section>
+
           <section ref={sectionRefs[3]} id="containers">
             <Containers />
           </section>
 
           <section ref={sectionRefs[4]} id="footer">
             <Parallax strength={500}>
-              <div className="footer">
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Sapiente ipsa deserunt repudiandae, porro nam magni quidem
-                  consequatur nesciunt. Iure inventore magni quasi, voluptatibus
-                  deleniti accusamus sunt quos laborum porro ab.
-                </p>
-              </div>
+              <div className="footer" style={{ height: 300 }} />
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Sapiente ipsa deserunt repudiandae, porro nam magni quidem
+                consequatur nesciunt. Iure inventore magni quasi, voluptatibus
+                deleniti accusamus sunt quos laborum porro ab.
+              </p>
             </Parallax>
-            <div style={{ height: 500 }} />
           </section>
         </div>
       )}
