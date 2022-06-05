@@ -25,17 +25,5 @@
 }
 
 .search__field {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 2rem;
   margin-top: 5rem;
 }
-
-/*.css-1s2u09g-control {
-  border-style: hidden;
-}
-
-.css-6j8wv5-Input {
-  padding: 0;
-}*/
