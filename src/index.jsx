@@ -6,6 +6,10 @@ import { Parallax } from 'react-parallax';
 import img1 from './img/buckets.jpg';
 import img2 from './img/bird_trash.jpg';
 import img3 from './img/water_pipe.jpg';
+import imguvod from './img/trefaNaKos.jpg';
+import imgkontajnery from './img/kontajnery.jpg';
+import imgrules from './img/cajka.jpg';
+import imgsearcher from './img/papier.jpg';
 import { Rules } from './Rules';
 import { Search } from './Search';
 import { Navigation } from './Navigation';
@@ -30,8 +34,12 @@ const App = () => {
         <div className="main">
           <Navigation activeIndex={currentElementIndexInViewport} />
           <section ref={sectionRefs[0]} id="home">
-            <Parallax bgImage={img1} strength={300}>
-              <div style={{ height: 800 }}>
+            <Parallax
+              bgImageStyle={{ heigth: '100%', width: '100%' }}
+              bgImage={imguvod}
+              strength={300}
+            >
+              <div style={{ height: 1300, width: 2400 }}>
                 <div className="strip strip__one">
                   <h1 className="strip__title">
                     {' '}
@@ -45,14 +53,20 @@ const App = () => {
               </div>
             </Parallax>
           </section>
+          <h1> </h1>
           <section ref={sectionRefs[1]} id="search" className="search">
-            <Variations group={group} onChangeGroup={setGroup} />
+            <Parallax bgImage={imgsearcher} strength={300}>
+              <div style={{ height: 1300, width: 2000 }}>
+                <Variations group={group} onChangeGroup={setGroup} />
 
-            <Search group={group} />
+                <Search group={group} />
+              </div>
+            </Parallax>
           </section>
+          <h1> </h1>
           <section ref={sectionRefs[2]} id="rules">
-            <Parallax bgImage={img2} strength={300}>
-              <div style={{ height: 500 }}>
+            <Parallax bgImage={imgrules} strength={300}>
+              <div style={{ height: 1300, width: 2000 }}>
                 <div className="strip strip__two">
                   {' '}
                   <Rules />
@@ -60,17 +74,21 @@ const App = () => {
               </div>
             </Parallax>
           </section>
+          <h1> </h1>
           <section ref={sectionRefs[3]} id="containers">
-            <Containers />
-          </section>
-          <Parallax bgImage={img3} strength={-100}>
-            <div style={{ height: 700 }}>
-              <div className="strip strip__three">
-                <h1 className="strip__title">Niečo zmysluplné</h1>
+            <Parallax
+              bgImage={imgkontajnery}
+              bgImageStyle={{ heigth: '100%', width: '100%' }}
+              strength={-100}
+            >
+              <div style={{ height: 1300 }}>
+                <Containers />
               </div>
-            </div>
-          </Parallax>
+            </Parallax>
+            <h1> </h1>
+          </section>
 
+          <h1> </h1>
           <section ref={sectionRefs[4]} id="footer">
             <Parallax strength={500}>
               <div className="footer">

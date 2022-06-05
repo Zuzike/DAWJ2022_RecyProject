@@ -5,6 +5,7 @@ export const Sklo = () => {
   return (
     <div className="sklo">
       <h1>SKLO</h1>
+      <span>image.png</span>
       <br />
       <p>Sklenený odpad umiestňujeme do zelených zberných nádob.</p>
       <br />
