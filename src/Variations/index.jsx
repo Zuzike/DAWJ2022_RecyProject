@@ -1,6 +1,6 @@
 import './styles.css';
 import React, { useState, useEffect } from 'react';
-import { BinIcon } from '../BinIcon';
+import { BinIcon } from '../icons/BinIcon';
 
 const computeGroup = (results) => {
   if (
@@ -53,7 +53,7 @@ export const Variations = ({ group, onChangeGroup }) => {
           <div className="variations__checkbox-slot">
             <div className="variations__checkbox-slot--var">
               <div className="search__icon">
-                <BinIcon color="green" />
+                <BinIcon color="green" width="40px" height="60px" />
               </div>
               <label>
                 <input
@@ -67,7 +67,7 @@ export const Variations = ({ group, onChangeGroup }) => {
             </div>
             <div className="variations__checkbox-slot--var">
               <div className="search__icon">
-                <BinIcon color="blue" />
+                <BinIcon color="blue" width="40px" height="60px" />
               </div>{' '}
               <label>
                 <input
@@ -81,7 +81,7 @@ export const Variations = ({ group, onChangeGroup }) => {
             </div>
             <div className="variations__checkbox-slot--var">
               <div className="search__icon">
-                <BinIcon color="yellow" />{' '}
+                <BinIcon color="yellow" width="40px" height="60px" />{' '}
               </div>
 
               <label>
@@ -97,7 +97,7 @@ export const Variations = ({ group, onChangeGroup }) => {
             <div className="variations__checkbox-slot--var">
               <div className="search__icon">
                 {' '}
-                <BinIcon color="orange" />{' '}
+                <BinIcon color="orange" width="40px" height="60px" />{' '}
               </div>
 
               <label>
@@ -114,7 +114,7 @@ export const Variations = ({ group, onChangeGroup }) => {
             <div className="variations__checkbox-slot--var">
               <div className="search__icon">
                 {' '}
-                <BinIcon color="red" />{' '}
+                <BinIcon color="red" width="40px" height="60px" />{' '}
               </div>
 
               <label>

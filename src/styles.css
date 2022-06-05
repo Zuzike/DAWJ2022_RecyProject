@@ -33,6 +33,7 @@
   height: 1300px;
   justify-content: center;
   align-items: center;
+  gap: 4rem;
 }
 .footer__bottom {
   background-color: bisque;

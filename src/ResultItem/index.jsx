@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.css';
-import { BinIcon } from '../BinIcon';
+import { BinIcon } from '../icons/BinIcon';
 
 import { data } from '../../data';
 
@@ -21,7 +21,9 @@ export const ResultItem = ({ type, group }) => {
     return (
       <>
         <div className="search__result--bin">
-          <BinIcon color="red" />
+          <div className="search__icon">
+            <BinIcon color="blue" width="60px" height="80px" />
+          </div>
 
           <p>Papier</p>
         </div>
@@ -35,8 +37,9 @@ export const ResultItem = ({ type, group }) => {
     return (
       <>
         <div className="search__result--bin">
-          <BinIcon color="red" />
-
+          <div className="search__icon">
+            <BinIcon color="green" width="60px" height="80px" />
+          </div>
           <p>Sklo</p>
         </div>
         <div className="search__result--notes">
@@ -49,8 +52,9 @@ export const ResultItem = ({ type, group }) => {
     return (
       <>
         <div className="search__result--bin">
-          <BinIcon color="red" />
-
+          <div className="search__icon">
+            <BinIcon color="yellow" width="60px" height="80px" />
+          </div>
           <p>Plast</p>
         </div>
         <div className="search__result--notes">
@@ -63,7 +67,9 @@ export const ResultItem = ({ type, group }) => {
     return (
       <>
         <div className="search__result--bin">
-          <img src={bin2} alt="smetna nadoba ikona hnedá" />
+          <div className="search__icon">
+            <BinIcon color="braun" width="60px" height="80px" />
+          </div>
           <p>Kuchynský bioodpad</p>
         </div>
         <div className="search__result--notes">
@@ -76,7 +82,9 @@ export const ResultItem = ({ type, group }) => {
     return (
       <>
         <div className="search__result--bin">
-          <BinIcon color="red" />
+          <div className="search__icon">
+            <BinIcon color="braun" width="60px" height="80px" />
+          </div>
 
           <p>Záhradný bioodpad</p>
         </div>
@@ -90,7 +98,9 @@ export const ResultItem = ({ type, group }) => {
     return (
       <>
         <div className="search__result--bin">
-          <BinIcon color="red" />
+          <div className="search__icon">
+            <BinIcon color="braun" width="60px" height="80px" />
+          </div>
 
           <p>Kompost</p>
         </div>
@@ -104,7 +114,9 @@ export const ResultItem = ({ type, group }) => {
     return (
       <>
         <div className="search__result--bin">
-          <BinIcon color="red" />
+          <div className="search__icon">
+            <BinIcon color="black" width="60px" height="80px" />
+          </div>
         </div>
         <div className="search__result--notes">
           <Notes type={type} />
@@ -116,7 +128,9 @@ export const ResultItem = ({ type, group }) => {
     return (
       <>
         <div className="search__result--bin">
-          <BinIcon color="red" />
+          <div className="search__icon">
+            <BinIcon color="black" width="60px" height="80px" />
+          </div>
 
           <p>Zberný dvor</p>
         </div>
@@ -130,8 +144,9 @@ export const ResultItem = ({ type, group }) => {
     return (
       <>
         <div className="search__result--bin">
-          <BinIcon color="red" />
-
+          <div className="search__icon">
+            <BinIcon color="red" width="60px" height="80px" />
+          </div>
           <p>Textil</p>
         </div>
         <div className="search__result--notes">
@@ -144,7 +159,9 @@ export const ResultItem = ({ type, group }) => {
     return (
       <>
         <div className="search__result--bin">
-          <BinIcon color="red" />
+          <div className="search__icon">
+            <BinIcon color="yellow" width="60px" height="80px" />
+          </div>
 
           <p>Plast/Kovy</p>
         </div>
@@ -158,8 +175,9 @@ export const ResultItem = ({ type, group }) => {
     return (
       <>
         <div className="search__result--bin">
-          <BinIcon color="red" />
-
+          <div className="search__icon">
+            <BinIcon color="yellow" width="60px" height="80px" />
+          </div>
           <p>Plast</p>
         </div>
         <div className="search__result--notes">
@@ -172,7 +190,9 @@ export const ResultItem = ({ type, group }) => {
     return (
       <>
         <div className="search__result--bin">
-          <BinIcon color="red" />
+          <div className="search__icon">
+            <BinIcon color="orange" width="60px" height="80px" />
+          </div>
 
           <p>Nápojové kartóny</p>
         </div>
@@ -186,8 +206,9 @@ export const ResultItem = ({ type, group }) => {
     return (
       <>
         <div className="search__result--bin">
-          <BinIcon color="red" />
-
+          <div className="search__icon">
+            <BinIcon color="yellow" width="60px" height="80px" />
+          </div>
           <p>Plast</p>
         </div>
         <div className="search__result--notes">
@@ -200,7 +221,9 @@ export const ResultItem = ({ type, group }) => {
     return (
       <>
         <div className="search__result--bin">
-          <BinIcon color="red" />
+          <div className="search__icon">
+            <BinIcon color="yellow" width="60px" height="80px" />
+          </div>
 
           <p>Plast</p>
         </div>
@@ -214,8 +237,9 @@ export const ResultItem = ({ type, group }) => {
     return (
       <>
         <div className="search__result--bin">
-          <BinIcon color="red" />
-
+          <div className="search__icon">
+            <BinIcon color="red" width="60px" height="80px" />
+          </div>
           <p>Kovy</p>
         </div>
         <div className="search__result--notes">
@@ -228,8 +252,9 @@ export const ResultItem = ({ type, group }) => {
   return (
     <>
       <div className="search__result--bin">
-        <BinIcon color="red" />
-
+        <div className="search__icon">
+          <BinIcon color="braun" width="60px" height="80px" />
+        </div>
         <p>Zmiešaný odpad</p>
       </div>
       <div className="search__result--notes">
