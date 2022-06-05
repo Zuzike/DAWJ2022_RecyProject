@@ -2,6 +2,19 @@ import React from 'react';
 import './styles.css';
 import bin2 from './img/mini_bin2.jpg';
 import { Papier } from '../Containers/Papier';
+import { data } from '../../data';
+
+const Notes = ({ type }) => {
+  return (
+    <ul>
+      {data
+        .find((item) => item.type === type)
+        ?.notes?.map((it, i) => (
+          <li key={i}>{it}</li>
+        ))}
+    </ul>
+  );
+};
 
 export const ResultItem = ({ type, group }) => {
   if (type === 'papier') {
@@ -12,12 +25,7 @@ export const ResultItem = ({ type, group }) => {
           <p>Papier</p>
         </div>
         <div className="search__result--notes">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus
-            quia animi cumque sed suscipit assumenda nisi non magni soluta dicta
-            et eum cupiditate voluptas, tenetur error doloremque nihil
-            architecto alias.
-          </p>
+          <Notes type={type} />
         </div>
       </>
     );
@@ -30,12 +38,7 @@ export const ResultItem = ({ type, group }) => {
           <p>Sklo</p>
         </div>
         <div className="search__result--notes">
-          <p className="search__result--text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus
-            quia animi cumque sed suscipit assumenda nisi non magni soluta dicta
-            et eum cupiditate voluptas, tenetur error doloremque nihil
-            architecto alias.
-          </p>
+          <Notes type={type} />
         </div>
       </>
     );
@@ -48,12 +51,7 @@ export const ResultItem = ({ type, group }) => {
           <p>Plast</p>
         </div>
         <div className="search__result--notes">
-          <p className="search__result--text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus
-            quia animi cumque sed suscipit assumenda nisi non magni soluta dicta
-            et eum cupiditate voluptas, tenetur error doloremque nihil
-            architecto alias.
-          </p>
+          <Notes type={type} />
         </div>
       </>
     );
@@ -66,12 +64,7 @@ export const ResultItem = ({ type, group }) => {
           <p>Kuchynský bioodpad</p>
         </div>
         <div className="search__result--notes">
-          <p className="search__result--text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus
-            quia animi cumque sed suscipit assumenda nisi non magni soluta dicta
-            et eum cupiditate voluptas, tenetur error doloremque nihil
-            architecto alias.
-          </p>
+          <Notes type={type} />
         </div>
       </>
     );
@@ -84,12 +77,7 @@ export const ResultItem = ({ type, group }) => {
           <p>Záhradný bioodpad</p>
         </div>
         <div className="search__result--notes">
-          <p className="search__result--text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus
-            quia animi cumque sed suscipit assumenda nisi non magni soluta dicta
-            et eum cupiditate voluptas, tenetur error doloremque nihil
-            architecto alias.
-          </p>
+          <Notes type={type} />
         </div>
       </>
     );
@@ -102,12 +90,7 @@ export const ResultItem = ({ type, group }) => {
           <p>Kompost</p>
         </div>
         <div className="search__result--notes">
-          <p className="search__result--text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus
-            quia animi cumque sed suscipit assumenda nisi non magni soluta dicta
-            et eum cupiditate voluptas, tenetur error doloremque nihil
-            architecto alias.
-          </p>
+          <Notes type={type} />
         </div>
       </>
     );
@@ -120,13 +103,7 @@ export const ResultItem = ({ type, group }) => {
           <p>Jedlé oleje a tuky</p>
         </div>
         <div className="search__result--notes">
-          {' '}
-          <p className="search__result--text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus
-            quia animi cumque sed suscipit assumenda nisi non magni soluta dicta
-            et eum cupiditate voluptas, tenetur error doloremque nihil
-            architecto alias.
-          </p>
+          <Notes type={type} />
         </div>
       </>
     );
@@ -139,13 +116,7 @@ export const ResultItem = ({ type, group }) => {
           <p>Zberný dvor</p>
         </div>
         <div className="search__result--notes">
-          {' '}
-          <p className="search__result--text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus
-            quia animi cumque sed suscipit assumenda nisi non magni soluta dicta
-            et eum cupiditate voluptas, tenetur error doloremque nihil
-            architecto alias.
-          </p>
+          <Notes type={type} />
         </div>
       </>
     );
@@ -158,13 +129,7 @@ export const ResultItem = ({ type, group }) => {
           <p>Textil</p>
         </div>
         <div className="search__result--notes">
-          {' '}
-          <p className="search__result--text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus
-            quia animi cumque sed suscipit assumenda nisi non magni soluta dicta
-            et eum cupiditate voluptas, tenetur error doloremque nihil
-            architecto alias.
-          </p>
+          <Notes type={type} />
         </div>
       </>
     );
@@ -177,13 +142,7 @@ export const ResultItem = ({ type, group }) => {
           <p>Plast/Kovy</p>
         </div>
         <div className="search__result--notes">
-          {' '}
-          <p className="search__result--text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus
-            quia animi cumque sed suscipit assumenda nisi non magni soluta dicta
-            et eum cupiditate voluptas, tenetur error doloremque nihil
-            architecto alias.
-          </p>
+          <Notes type={type} />
         </div>
       </>
     );
@@ -196,13 +155,7 @@ export const ResultItem = ({ type, group }) => {
           <p>Nápojové kartóny</p>
         </div>
         <div className="search__result--notes">
-          {' '}
-          <p className="search__result--text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus
-            quia animi cumque sed suscipit assumenda nisi non magni soluta dicta
-            et eum cupiditate voluptas, tenetur error doloremque nihil
-            architecto alias.
-          </p>
+          <Notes type={type} />
         </div>
       </>
     );
@@ -215,18 +168,12 @@ export const ResultItem = ({ type, group }) => {
           <p>Plast</p>
         </div>
         <div className="search__result--notes">
-          {' '}
-          <p className="search__result--text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus
-            quia animi cumque sed suscipit assumenda nisi non magni soluta dicta
-            et eum cupiditate voluptas, tenetur error doloremque nihil
-            architecto alias.
-          </p>
+          <Notes type={type} />
         </div>
       </>
     );
   }
-  if ((type = 'kovy' && group === 'B')) {
+  if (type === 'kovy' && group === 'B') {
     return (
       <>
         <div className="search__result--bin">
@@ -234,17 +181,12 @@ export const ResultItem = ({ type, group }) => {
           <p>Plast</p>
         </div>
         <div className="search__result--notes">
-          <p className="search__result--text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus
-            quia animi cumque sed suscipit assumenda nisi non magni soluta dicta
-            et eum cupiditate voluptas, tenetur error doloremque nihil
-            architecto alias.
-          </p>
+          <Notes type={type} />
         </div>
       </>
     );
   }
-  if ((type = 'kovy' && (group === 'E' || group === 'A/D'))) {
+  if (type === 'kovy' && (group === 'E' || group === 'A/D')) {
     return (
       <>
         <div className="search__result--bin">
@@ -252,12 +194,7 @@ export const ResultItem = ({ type, group }) => {
           <p>Kovy</p>
         </div>
         <div className="search__result--notes">
-          <p className="search__result--text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus
-            quia animi cumque sed suscipit assumenda nisi non magni soluta dicta
-            et eum cupiditate voluptas, tenetur error doloremque nihil
-            architecto alias.
-          </p>
+          <Notes type={type} />
         </div>
       </>
     );
@@ -270,11 +207,7 @@ export const ResultItem = ({ type, group }) => {
         <p>Zmiešaný odpad</p>
       </div>
       <div className="search__result--notes">
-        <p className="search__result--text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus quia
-          animi cumque sed suscipit assumenda nisi non magni soluta dicta et eum
-          cupiditate voluptas, tenetur error doloremque nihil architecto alias.
-        </p>
+        <Notes type={type} />
       </div>
     </>
   );

@@ -6,15 +6,14 @@ export const Footer = () => {
     <>
       <div className="footer">
         <div className="footer__left">
+          <h3>O projekte</h3>
           <p className="footer__left--text">
-            <h3>O projekte</h3>
             Projekt vznikol v rámci účasti Digitálnej akadémie Czechitas.
           </p>
         </div>
         <div className="footer__right">
-          <p className="footer__right--text">
-            <h3>Odkazy na užitočné stránky:</h3>
-          </p>
+          <h3>Odkazy na užitočné stránky:</h3>
+          <p className="footer__right--text"></p>
         </div>
       </div>
     </>
