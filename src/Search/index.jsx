@@ -3,6 +3,7 @@ import './styles.css';
 import Select from 'react-select';
 import { data } from '../../data';
 import { ResultItem } from '../ResultItem';
+import { IconHands } from '../icons/IconHands';
 
 const options = data
   .map((value) =>
@@ -29,6 +30,7 @@ export const Search = ({ group }) => {
         </div>
         <div className="search__field">
           <ResultItem type={result} group={group} />
+          <IconHands />
         </div>
       </section>
     </>

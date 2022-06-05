@@ -28,10 +28,20 @@
 }
 
 .navbar_logo {
-  font-size: 30px;
-  margin-left: 30px;
+  /*font-size: 30px;
+  margin-left: 30px;*/
+  display: flex;
 }
 
+.logo {
+  padding: 1rem;
+}
+
+.navbar_logo--title {
+  padding: 1rem;
+  align-self: flex-end;
+  margin: 0;
+}
 .activeIndex {
   background-color: rgba(25, 141, 213, 0.5);
 }

@@ -1,11 +1,11 @@
 import React from 'react';
 
-export const BinIcon = ({ color }) => {
+export const BinIcon = ({ color, width, height }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="38"
-      height="56"
+      width={width}
+      height={height}
       version="1.1"
       viewBox="0 0 78.743 148.999"
     >
