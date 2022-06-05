@@ -1,7 +1,6 @@
 import './styles.css';
-import bin1 from './img/mini_bin.jpg';
-import bin2 from './img/mini_bin2.jpg';
 import React, { useState, useEffect } from 'react';
+import { BinIcon } from '../BinIcon';
 
 const computeGroup = (results) => {
   if (
@@ -53,7 +52,9 @@ export const Variations = ({ group, onChangeGroup }) => {
         <div className="search__groups">
           <div className="variations__checkbox-slot">
             <div className="variations__checkbox-slot--var">
-              <img src={bin1} alt="smetna nadoba ikona" />
+              <div className="search__icon">
+                <BinIcon color="green" />
+              </div>
               <label>
                 <input
                   onChange={onChange('red')}
@@ -61,11 +62,13 @@ export const Variations = ({ group, onChangeGroup }) => {
                   className="variations__checkbox"
                   type="checkbox"
                 ></input>
-                Red
+                Zelená
               </label>
             </div>
             <div className="variations__checkbox-slot--var">
-              <img src={bin2} alt="smetna nadoba ikona" />
+              <div className="search__icon">
+                <BinIcon color="blue" />
+              </div>{' '}
               <label>
                 <input
                   onChange={onChange('blue')}
@@ -73,11 +76,14 @@ export const Variations = ({ group, onChangeGroup }) => {
                   className="variations__checkbox"
                   type="checkbox"
                 ></input>
-                Blue
+                Modrá
               </label>
             </div>
             <div className="variations__checkbox-slot--var">
-              <img src={bin1} alt="smetna nadoba ikona" />
+              <div className="search__icon">
+                <BinIcon color="yellow" />{' '}
+              </div>
+
               <label>
                 <input
                   onChange={onChange('green')}
@@ -85,11 +91,15 @@ export const Variations = ({ group, onChangeGroup }) => {
                   className="variations__checkbox"
                   type="checkbox"
                 ></input>
-                Green
+                Žltá
               </label>
             </div>
             <div className="variations__checkbox-slot--var">
-              <img src={bin1} alt="smetna nadoba ikona" />
+              <div className="search__icon">
+                {' '}
+                <BinIcon color="orange" />{' '}
+              </div>
+
               <label>
                 {' '}
                 <input
@@ -98,11 +108,15 @@ export const Variations = ({ group, onChangeGroup }) => {
                   className="variations__checkbox"
                   type="checkbox"
                 ></input>
-                Yellow
+                Oranžová
               </label>
             </div>
             <div className="variations__checkbox-slot--var">
-              <img src={bin1} alt="smetna nadoba ikona" />
+              <div className="search__icon">
+                {' '}
+                <BinIcon color="red" />{' '}
+              </div>
+
               <label>
                 {' '}
                 <input
@@ -111,7 +125,7 @@ export const Variations = ({ group, onChangeGroup }) => {
                   className="variations__checkbox"
                   type="checkbox"
                 ></input>
-                Orange
+                Červená
               </label>
             </div>
           </div>

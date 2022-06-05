@@ -1,10 +1,16 @@
 .search__result--notes {
-  flex: 1;
   padding: 2rem;
-  flex-grow: 2;
 }
 
 .search__result--bin {
-  flex: 1;
   padding: 2rem;
+}
+
+ul {
+  list-style-position: inside;
+}
+.search__result--text {
+  list-style-type: disc;
+  text-align: left;
+  line-height: 1.4;
 }

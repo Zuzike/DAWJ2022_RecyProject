@@ -1,12 +1,12 @@
 import React from 'react';
 import './styles.css';
-import bin2 from './img/mini_bin2.jpg';
-import { Papier } from '../Containers/Papier';
+import { BinIcon } from '../BinIcon';
+
 import { data } from '../../data';
 
 const Notes = ({ type }) => {
   return (
-    <ul>
+    <ul className="search__result--text">
       {data
         .find((item) => item.type === type)
         ?.notes?.map((it, i) => (
@@ -21,7 +21,8 @@ export const ResultItem = ({ type, group }) => {
     return (
       <>
         <div className="search__result--bin">
-          <img src={bin2} alt="smetna nadoba ikona modrá" />
+          <BinIcon color="red" />
+
           <p>Papier</p>
         </div>
         <div className="search__result--notes">
@@ -34,7 +35,8 @@ export const ResultItem = ({ type, group }) => {
     return (
       <>
         <div className="search__result--bin">
-          <img src={bin2} alt="smetna nadoba ikona zelená" />
+          <BinIcon color="red" />
+
           <p>Sklo</p>
         </div>
         <div className="search__result--notes">
@@ -47,7 +49,8 @@ export const ResultItem = ({ type, group }) => {
     return (
       <>
         <div className="search__result--bin">
-          <img src={bin2} alt="smetna nadoba ikona žltá" />
+          <BinIcon color="red" />
+
           <p>Plast</p>
         </div>
         <div className="search__result--notes">
@@ -73,7 +76,8 @@ export const ResultItem = ({ type, group }) => {
     return (
       <>
         <div className="search__result--bin">
-          <img src={bin2} alt="smetna nadoba ikona hnedá" />
+          <BinIcon color="red" />
+
           <p>Záhradný bioodpad</p>
         </div>
         <div className="search__result--notes">
@@ -86,7 +90,8 @@ export const ResultItem = ({ type, group }) => {
     return (
       <>
         <div className="search__result--bin">
-          <img src={bin2} alt="smetna nadoba ikona hnedá" />
+          <BinIcon color="red" />
+
           <p>Kompost</p>
         </div>
         <div className="search__result--notes">
@@ -99,8 +104,7 @@ export const ResultItem = ({ type, group }) => {
     return (
       <>
         <div className="search__result--bin">
-          <img src={bin2} alt="smetna nadoba ikona čierna" />
-          <p>Jedlé oleje a tuky</p>
+          <BinIcon color="red" />
         </div>
         <div className="search__result--notes">
           <Notes type={type} />
@@ -112,7 +116,8 @@ export const ResultItem = ({ type, group }) => {
     return (
       <>
         <div className="search__result--bin">
-          <img src={bin2} alt="ikona dvor" />
+          <BinIcon color="red" />
+
           <p>Zberný dvor</p>
         </div>
         <div className="search__result--notes">
@@ -125,7 +130,8 @@ export const ResultItem = ({ type, group }) => {
     return (
       <>
         <div className="search__result--bin">
-          <img src={bin2} alt="smetna nadoba ikona fialová" />
+          <BinIcon color="red" />
+
           <p>Textil</p>
         </div>
         <div className="search__result--notes">
@@ -134,12 +140,27 @@ export const ResultItem = ({ type, group }) => {
       </>
     );
   }
-  if (type === 'nápojové kartóny' && (group === 'A/D' || group === C)) {
+  if (type === 'nápojové kartóny' && group === 'A/D') {
     return (
       <>
         <div className="search__result--bin">
-          <img src={bin2} alt="smetna nadoba ikona " />
+          <BinIcon color="red" />
+
           <p>Plast/Kovy</p>
+        </div>
+        <div className="search__result--notes">
+          <Notes type={type} />
+        </div>
+      </>
+    );
+  }
+  if (type === 'nápojové kartóny' && group === 'C') {
+    return (
+      <>
+        <div className="search__result--bin">
+          <BinIcon color="red" />
+
+          <p>Plast</p>
         </div>
         <div className="search__result--notes">
           <Notes type={type} />
@@ -151,7 +172,8 @@ export const ResultItem = ({ type, group }) => {
     return (
       <>
         <div className="search__result--bin">
-          <img src={bin2} alt="smetna nadoba ikona oranžová " />
+          <BinIcon color="red" />
+
           <p>Nápojové kartóny</p>
         </div>
         <div className="search__result--notes">
@@ -164,7 +186,8 @@ export const ResultItem = ({ type, group }) => {
     return (
       <>
         <div className="search__result--bin">
-          <img src={bin2} alt="smetna nadoba ikona žltá" />
+          <BinIcon color="red" />
+
           <p>Plast</p>
         </div>
         <div className="search__result--notes">
@@ -177,7 +200,8 @@ export const ResultItem = ({ type, group }) => {
     return (
       <>
         <div className="search__result--bin">
-          <img src={bin2} alt="smetna nadoba ikona žltá" />
+          <BinIcon color="red" />
+
           <p>Plast</p>
         </div>
         <div className="search__result--notes">
@@ -190,7 +214,8 @@ export const ResultItem = ({ type, group }) => {
     return (
       <>
         <div className="search__result--bin">
-          <img src={bin2} alt="smetna nadoba ikona červená" />
+          <BinIcon color="red" />
+
           <p>Kovy</p>
         </div>
         <div className="search__result--notes">
@@ -203,7 +228,8 @@ export const ResultItem = ({ type, group }) => {
   return (
     <>
       <div className="search__result--bin">
-        <img src={bin2} alt="smetná nadoba ikona šedá" />
+        <BinIcon color="red" />
+
         <p>Zmiešaný odpad</p>
       </div>
       <div className="search__result--notes">
