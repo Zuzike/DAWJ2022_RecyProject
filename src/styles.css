@@ -13,18 +13,6 @@
 .strip {
   background-color: white;
 }
-.strip__one {
-  margin: -2.5rem 5rem;
-  width: 50%;
-
-  opacity: 0.8;
-}
-.strip__two {
-  right: 15%;
-  width: 50%;
-  height: 1300px;
-  opacity: 0.8;
-}
 
 .search {
   display: flex;
