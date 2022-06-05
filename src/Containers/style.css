@@ -4,6 +4,8 @@
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
+
+  margin-bottom: 350px;
 }
 
 .container {
@@ -19,22 +21,21 @@
   flex-wrap: wrap;
   gap: 30px;
   background-color: whitesmoke;
+  min-width: 150px;
 }
 
 .popup {
-  display: flex;
   text-align: center;
-  justify-content: center;
+
   border: 2px solid black;
   border-radius: 20px;
   padding: 40px;
   width: 70%;
   align-items: center;
   position: relative;
-  top: 30px;
-  margin: auto;
-  max-height: 50%;
-  background-color: rgb(245, 245, 245, 0.5);
+  margin: 150px auto;
+  margin-bottom: 500px;
+  background-color: rgb(245, 245, 245, 0.8);
 }
 
 .button_close {
