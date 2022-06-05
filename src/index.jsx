@@ -91,16 +91,14 @@ const App = () => {
           <h1> </h1>
           <section ref={sectionRefs[4]} id="footer">
             <Parallax strength={500}>
-              <div className="footer">
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Sapiente ipsa deserunt repudiandae, porro nam magni quidem
-                  consequatur nesciunt. Iure inventore magni quasi, voluptatibus
-                  deleniti accusamus sunt quos laborum porro ab.
-                </p>
-              </div>
+              <div className="footer" style={{ height: 300 }} />
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Sapiente ipsa deserunt repudiandae, porro nam magni quidem
+                consequatur nesciunt. Iure inventore magni quasi, voluptatibus
+                deleniti accusamus sunt quos laborum porro ab.
+              </p>
             </Parallax>
-            <div style={{ height: 500 }} />
           </section>
         </div>
       )}
