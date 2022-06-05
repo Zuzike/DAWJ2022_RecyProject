@@ -33,11 +33,7 @@ const App = () => {
         <div className="main">
           <Navigation activeIndex={currentElementIndexInViewport} />
           <section ref={sectionRefs[0]} id="home">
-            <Parallax
-              bgImageStyle={{ heigth: '100%', width: '100%' }}
-              bgImage={imguvod}
-              strength={300}
-            >
+            <Parallax bgImage={imguvod} strength={300}>
               <div style={{ height: 1300, width: 2400 }}>
                 <div className="strip strip__one">
                   <StripContent />
@@ -76,11 +72,7 @@ const App = () => {
           </section>
           <h1> </h1>
           <section ref={sectionRefs[3]} id="containers">
-            <Parallax
-              bgImage={imgkontajnery}
-              bgImageStyle={{ heigth: '100%', width: '100%' }}
-              strength={-100}
-            >
+            <Parallax bgImage={imgkontajnery} strength={-100}>
               <div style={{ height: 1300 }}>
                 <Containers />
               </div>

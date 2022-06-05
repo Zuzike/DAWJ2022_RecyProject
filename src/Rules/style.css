@@ -5,8 +5,9 @@
   border: 2px solid black;
   border-radius: 20px;
   padding: 40px;
-  width: 26%;
+  width: 70%;
   align-items: center;
+  max-width: 70%;
 }
 
 .rules {
@@ -22,13 +23,15 @@
   display: flex;
   flex-direction: row;
   gap: 4px;
-  justify-content: center;
+  width: auto;
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 
 .icons_describe {
   display: none;
   padding: 1rem;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   border-radius: 10px;
 }
 
@@ -41,9 +44,8 @@
     font-size: 1rem;
   }
   .icons {
-    /*border: 2px solid black;*/
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
   }
 }
 
