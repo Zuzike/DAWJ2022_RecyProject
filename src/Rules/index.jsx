@@ -92,12 +92,11 @@ export const Rules = (props) => {
       </div>
     </div>
   ) : (
-    <div className="popup">
+    <div className="popupRules">
       <button onClick={() => setType('')} className="button_close">
         X
       </button>
-
-      <p className=" ">{rules[type]}</p>
+      <p>{rules[type]}</p>
     </div>
   );
 };
