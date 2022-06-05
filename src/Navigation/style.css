@@ -11,20 +11,7 @@
 }
 
 .navbar_buttons {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 30px;
-}
-
-.navbar_button {
-  width: 150px;
-  padding: 5px;
-  font-size: 20px;
-  background-color: rgb(249, 249, 235);
-  border: 2px solid beige;
-  border-radius: 10px;
-  text-decoration: none;
+  display: none;
 }
 
 .navbar_logo {
@@ -42,6 +29,27 @@
   align-self: flex-end;
   margin: 0;
 }
-.activeIndex {
-  background-color: rgba(25, 141, 213, 0.5);
+
+@media (min-width: 1200px) {
+  .navbar_buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    margin-right: 2rem;
+  }
+
+  .navbar_button {
+    width: 150px;
+    padding: 5px;
+    font-size: 20px;
+    background-color: rgb(249, 249, 235);
+    border: 2px solid beige;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+
+  .activeIndex {
+    background-color: rgba(25, 141, 213, 0.5);
+  }
 }
