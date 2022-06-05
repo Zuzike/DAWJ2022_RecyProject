@@ -25,12 +25,9 @@
   right: 15%;
   width: 20rem;
   height: 1300px;
+  opacity: 0.8;
 }
-.strip__three {
-  right: 10%;
-  width: 20rem;
-  height: 100%;
-}
+
 .search {
   display: flex;
   height: 1300px;

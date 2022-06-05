@@ -38,11 +38,8 @@
 }
 
 @media (min-width: 600px) {
-  .icons_describe {
-    display: block;
-  }
   .strip__two {
-    width: 30rem;
+    width: 20rem;
     font-size: 1rem;
   }
   .icons {
@@ -52,6 +49,9 @@
 }
 
 @media (min-width: 1200px) {
+  .icons_describe {
+    display: block;
+  }
   .strip__two {
     width: 40rem;
     font-size: 1rem;
