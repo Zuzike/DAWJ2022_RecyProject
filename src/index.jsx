@@ -52,7 +52,7 @@ const App = () => {
           </section>
           <section ref={sectionRefs[2]} id="rules">
             <Parallax bgImage={img2} strength={300}>
-              <div style={{ height: 500 }}>
+              <div style={{ height: 800 }}>
                 <div className="strip strip__two">
                   {' '}
                   <Rules />
@@ -63,13 +63,6 @@ const App = () => {
           <section ref={sectionRefs[3]} id="containers">
             <Containers />
           </section>
-          <Parallax bgImage={img3} strength={-100}>
-            <div style={{ height: 700 }}>
-              <div className="strip strip__three">
-                <h1 className="strip__title">Niečo zmysluplné</h1>
-              </div>
-            </div>
-          </Parallax>
 
           <section ref={sectionRefs[4]} id="footer">
             <Parallax strength={500}>
