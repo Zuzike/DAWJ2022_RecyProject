@@ -1,7 +1,9 @@
 .strip__title {
   padding: 1rem;
+  font-size: 3rem;
 }
 
 .strip__content {
   padding: 2rem;
+  font-size: 2rem;
 }

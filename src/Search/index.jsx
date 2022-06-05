@@ -26,10 +26,8 @@ export const Search = ({ group }) => {
             options={options}
             onChange={onChange}
           />
-
-          {/*<img className="search__icon" src={lupa} alt="lupa" />*/}
         </div>
-        <div className="search__result">
+        <div className="search__field">
           <ResultItem type={result} group={group} />
         </div>
       </section>

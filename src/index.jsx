@@ -15,6 +15,7 @@ import { Variations } from './Variations';
 import { Containers } from './Containers';
 import { Bubles } from './Bubles';
 import { StripContent } from './StripContent';
+import { Footer } from './Footer';
 
 const App = () => {
   const [group, setGroup] = useState('');
@@ -45,9 +46,9 @@ const App = () => {
             </Parallax>
           </section>
           <h1> </h1>
-          <section ref={sectionRefs[1]} id="search" className="search">
+          <section ref={sectionRefs[1]} id="search">
             <Parallax bgImage={imgsearcher} strength={300}>
-              <div className="search" style={{ height: 1300, width: 2400 }}>
+              <div className="search">
                 <Variations group={group} onChangeGroup={setGroup} />
 
                 <Search group={group} />
@@ -85,15 +86,15 @@ const App = () => {
           <h1> </h1>
           <section ref={sectionRefs[4]} id="footer">
             <Parallax strength={500}>
-              <div className="footer" style={{ height: 300 }} />
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Sapiente ipsa deserunt repudiandae, porro nam magni quidem
-                consequatur nesciunt. Iure inventore magni quasi, voluptatibus
-                deleniti accusamus sunt quos laborum porro ab.
-              </p>
+              <div style={{ height: 300 }}>
+                <Footer />
+              </div>
             </Parallax>
           </section>
+          <p className="footer__bottom">
+            Trefa na kôš © 2022. Autorky: Ivana Plašienková, Zuzana Nemesová;
+            Mentor: Pavol Otčenáš
+          </p>
         </div>
       )}
     </Scrollspy>
