@@ -1,6 +1,7 @@
 import React from 'react';
 import { PersonIcon } from '../icons/PersonIcon';
 import './style.css';
+import { Hamburger } from '../Hamburger';
 
 export const Navigation = ({ activeIndex }) => {
   return (
@@ -11,6 +12,7 @@ export const Navigation = ({ activeIndex }) => {
           <PersonIcon />
         </div>
       </span>
+      <Hamburger />
       <div className="navbar_buttons">
         <a
           className={`navbar_button ${activeIndex === 0 ? 'activeIndex' : ''}`}
@@ -40,7 +42,7 @@ export const Navigation = ({ activeIndex }) => {
           className={`navbar_button ${activeIndex === 4 ? 'activeIndex' : ''}`}
           href="#footer"
         >
-          O nás
+          Odkazy
         </a>
       </div>
     </nav>
