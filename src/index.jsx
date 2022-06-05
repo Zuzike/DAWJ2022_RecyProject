@@ -35,13 +35,11 @@ const App = () => {
           <Navigation activeIndex={currentElementIndexInViewport} />
           <section ref={sectionRefs[0]} id="home">
             <Parallax bgImage={imguvod} strength={300}>
-              <div style={{ height: 1300, width: 2400 }}>
-                <div className="strip strip__one">
-                  <StripContent />
-                </div>
-                <div className="buble buble__one">
-                  <Bubles />
-                </div>
+              <div className="strip strip__one">
+                <StripContent />
+              </div>
+              <div className="buble buble__one">
+                <Bubles />
               </div>
             </Parallax>
           </section>
@@ -60,17 +58,17 @@ const App = () => {
             <Parallax
               bgImage={imgrules}
               strength={300}
-              style={{ height: 1300 }}
+              //style={{ minHeight: 1300 }}
             >
-              <div>
-                <div className="strip strip__two">
-                  {' '}
-                  <Rules />
-                </div>
-                <div className="buble buble__two">
-                  <Bubles position="left" />
-                </div>
+              {/* <div> */}
+              <div className="strip strip__two">
+                {' '}
+                <Rules />
               </div>
+              <div className="buble buble__two">
+                <Bubles position="left" />
+              </div>
+              {/* </div> */}
             </Parallax>
           </section>
           <h1> </h1>
