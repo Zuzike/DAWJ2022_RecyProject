@@ -34,6 +34,7 @@
   width: 100vw;
   height: 100vh;
   display: flex;
+  height: 1300px;
 }
 .footer__bottom {
   background-color: bisque;

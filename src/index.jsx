@@ -49,19 +49,21 @@ const App = () => {
             </Parallax>
           </section>
           <h1> </h1>
-          <section ref={sectionRefs[1]} id="search" className="search">
+          <section ref={sectionRefs[1]} id="search">
             <Parallax bgImage={imgsearcher} strength={300}>
-              <div style={{ height: 1300, width: 2000 }}>
-                <Variations group={group} onChangeGroup={setGroup} />
+              <div style={{ height: 1300, width: 2400 }}>
+                <div className="search">
+                  <Variations group={group} onChangeGroup={setGroup} />
 
-                <Search group={group} />
+                  <Search group={group} />
+                </div>
               </div>
             </Parallax>
           </section>
           <h1> </h1>
           <section ref={sectionRefs[2]} id="rules">
             <Parallax bgImage={imgrules} strength={300}>
-              <div style={{ height: 1300, width: 2000 }}>
+              <div style={{ height: 1300, width: 2400 }}>
                 <div className="strip strip__two">
                   {' '}
                   <Rules />
