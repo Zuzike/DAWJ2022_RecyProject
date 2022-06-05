@@ -7,7 +7,9 @@ export const Rules = (props) => {
       <div className="rules">
         <h1 className="rules_title">Päť pravidiel recyklácie</h1>
         <div className="icons">
-          <div className="icon icon_refuse">REFUSE (Odmietam)</div>
+          <div className="icon icon_refuse">
+            REFUSE <br /> (Odmietam)
+          </div>
           <p className="icons_describe">
             Ak si naozaj potrebujem niečo nové kúpiť, zamyslím sa nad obalom,
             pôvodom, kvalitou, férovosťou a spôsobom výroby a spracovania.
@@ -18,7 +20,10 @@ export const Rules = (props) => {
         </div>
         <div />
         <div className="icons">
-          <div className="icon icon_reduce">REDUCE (Redukujem)</div>
+          <div className="icon icon_reduce">
+            REDUCE <br />
+            (Redukujem)
+          </div>
           <p className="icons_describe">
             Redukujem množstvo vecí, ktoré nakupujem, či používam. Vyhýbam sa
             impulzívnemu nakupovaniu a nakupovaniu samoúčelných vecí. S každou
@@ -27,7 +32,10 @@ export const Rules = (props) => {
           </p>
         </div>
         <div className="icons">
-          <div className="icon icon_reuse">REUSE (Znovu využijem)</div>
+          <div className="icon icon_reuse">
+            REUSE <br />
+            (Znovu využijem)
+          </div>
           <p className="icons_describe">
             Veci používam opakovane. Pokiaľ vec už doslúžila svojmu primárnemu
             účelu, zamyslím sa nad inou možnosťou jej využitia. Zároveň myslím
@@ -36,7 +44,10 @@ export const Rules = (props) => {
           </p>
         </div>
         <div className="icons">
-          <div className="icon icon_recycle">RECYCLE (Recyclujem)</div>
+          <div className="icon icon_recycle">
+            RECYCLE <br />
+            (Recyclujem)
+          </div>
           <p className="icons_describe">
             Keď už vec naozaj doslúžila, snažím sa ju správne vytriediť, aby
             mohla byť zrecyklovaná. Na to, aby jeho recyklácia bola účelná,
@@ -46,7 +57,10 @@ export const Rules = (props) => {
           </p>
         </div>
         <div className="icons">
-          <div className="icon icon_rot">ROT (Kompostujem)</div>
+          <div className="icon icon_rot">
+            ROT <br />
+            (Kompostujem)
+          </div>
           <p className="icons_describe">
             Kompostovanie ako riadený proces rozkladu biologicky rozložiteľného
             odpadu je najlepším spôsobom využitia predovšetkým rastlinného

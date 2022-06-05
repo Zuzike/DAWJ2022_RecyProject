@@ -6,6 +6,7 @@ import imguvod from './img/trefaNaKos.jpg';
 import imgkontajnery from './img/kontajnery.jpg';
 import imgrules from './img/cajka.jpg';
 import imgsearcher from './img/papier.jpg';
+import imgcontainers from './img/kontajnery-velke.jpg';
 import { Rules } from './Rules';
 import { Search } from './Search';
 import { Navigation } from './Navigation';
@@ -55,8 +56,12 @@ const App = () => {
           </section>
           <h1> </h1>
           <section ref={sectionRefs[2]} id="rules">
-            <Parallax bgImage={imgrules} strength={300}>
-              <div style={{ height: 1300, width: 2000 }}>
+            <Parallax
+              bgImage={imgrules}
+              strength={300}
+              style={{ height: 1300 }}
+            >
+              <div>
                 <div className="strip strip__two">
                   {' '}
                   <Rules />
@@ -69,10 +74,10 @@ const App = () => {
           </section>
           <h1> </h1>
           <section ref={sectionRefs[3]} id="containers">
-            <Parallax bgImage={imgkontajnery} strength={-100}>
-              <div style={{ height: 1300 }}>
-                <Containers />
-              </div>
+            <Parallax bgImage={imgcontainers} strength={300}>
+              {/* <div style={{ height: 1300 }}> */}
+              <Containers />
+              {/* </div> */}
             </Parallax>
             <h1> </h1>
           </section>

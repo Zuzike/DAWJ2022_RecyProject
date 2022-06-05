@@ -4,10 +4,11 @@
   justify-content: center;
   border: 2px solid black;
   border-radius: 20px;
-  padding: 40px;
-  width: 70%;
+  padding: 10px;
+  padding: 20px;
   align-items: center;
-  max-width: 70%;
+  /* gap: 5px; */
+  min-width: 190px;
 }
 
 .rules {
@@ -15,17 +16,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  gap: 5px;
-  padding: 2rem;
+  gap: 2px;
+  padding: 20px;
+  width: 100%;
 }
 
 .icons {
   display: flex;
   flex-direction: row;
-  gap: 4px;
-  width: auto;
+
   /* justify-content: center; */
-  /* align-items: center; */
+  align-items: center;
+  padding: 30px;
 }
 
 .icons_describe {
@@ -44,7 +46,7 @@
     font-size: 1rem;
   }
   .icons {
-    width: 50%;
+    width: 90%;
     height: 50%;
   }
 }
