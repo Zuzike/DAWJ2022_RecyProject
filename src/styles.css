@@ -7,15 +7,13 @@
 .main {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
-  margin-top: 80px;
+  margin-top: 4rem;
+  font-size: 1.5rem;
 }
 
 .strip {
   background-color: white;
   position: absolute;
-  /* max-width: 8rem; */
-  /* max-height: 25rem; */
-  /* font-size: 8px; */
 }
 .strip__one {
   left: 20%;

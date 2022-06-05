@@ -1,5 +1,4 @@
 import React, { useState, useRef } from 'react';
-
 import { createRoot } from 'react-dom/client';
 import './styles.css';
 import { Parallax } from 'react-parallax';
@@ -16,6 +15,8 @@ import { Navigation } from './Navigation';
 import { Scrollspy } from '@makotot/ghostui';
 import { Variations } from './Variations';
 import { Containers } from './Containers';
+import { Bubles } from './Bubles';
+import { StripContent } from './StripContent';
 
 const App = () => {
   const [group, setGroup] = useState('');
@@ -41,14 +42,10 @@ const App = () => {
             >
               <div style={{ height: 1300, width: 2400 }}>
                 <div className="strip strip__one">
-                  <h1 className="strip__title">
-                    {' '}
-                    V našej krajine máme rôzne možnosti triedenia odpadov. Vyber
-                    si z ponuky smetných košov tie, ktoré vídaš vo svojom okolí.
-                    Potom do vyhľadávača napíš, čoho presne sa potrebuješ
-                    zbaviť. Vyhľadávač sa posnaží ťa nasmerovať na správnu
-                    odpadovú nádobu.
-                  </h1>
+                  <StripContent />
+                </div>
+                <div className="buble buble__one">
+                  <Bubles />
                 </div>
               </div>
             </Parallax>
@@ -70,6 +67,9 @@ const App = () => {
                 <div className="strip strip__two">
                   {' '}
                   <Rules />
+                </div>
+                <div className="buble buble__two">
+                  <Bubles position="left" />
                 </div>
               </div>
             </Parallax>
