@@ -1,0 +1,40 @@
+.uvod {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 400px;
+}
+
+.strip__title {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.strip__content {
+  padding: 2rem;
+  font-size: 1rem;
+}
+
+.strip__one {
+  background-color: white;
+  margin: -2.5rem 5rem;
+  width: 250px;
+  opacity: 0.8;
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+
+@media (min-width: 600px) {
+  .strip__one {
+    width: 450px;
+    font-size: 50px;
+    margin-bottom: 1px;
+  }
+
+  .strip__title {
+    font-size: 35px;
+  }
+
+  .strip__content {
+    font-size: 25px;
+  }
+}

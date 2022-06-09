@@ -18,6 +18,8 @@
   gap: 5px;
   padding: 20px;
   width: 100%;
+  margin-top: 20px;
+  padding-top: 50px;
 }
 
 .icons {
@@ -33,16 +35,22 @@
 }
 
 .strip__two {
+  background-color: white;
   margin: -1.5rem 10rem -5rem auto;
   width: 250px;
-  height: 1200px;
+  height: 1300px;
   opacity: 0.8;
+  padding-top: 20px;
 }
 
 @media (min-width: 600px) {
   .strip__two {
     width: 550px;
-    font-size: 1rem;
+    font-size: 14px;
+    margin-bottom: 1px;
+  }
+  .rules {
+    gap: 2px;
   }
   .icons_describe {
     display: block;
@@ -54,12 +62,10 @@
 }
 
 @media (min-width: 1200px) {
-  .icons_describe {
-    display: block;
-  }
   .strip__two {
     width: 640px;
     font-size: 1rem;
+    padding-bottom: 80px;
   }
 }
 
@@ -67,12 +73,11 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  border: 2px solid black;
-  border-radius: 20px;
   padding: 40px;
   align-items: center;
   justify-content: center;
   position: relative;
+  top: 70px;
   background-color: rgb(245, 245, 245, 0.8);
-  margin-top: 1rem;
+  margin-top: 20px;
 }

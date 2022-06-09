@@ -14,7 +14,7 @@ import { Scrollspy } from '@makotot/ghostui';
 import { Variations } from './Variations';
 import { Containers } from './Containers';
 import { Bubles } from './Bubles';
-import { StripContent } from './StripContent';
+import { Home } from './Home';
 import { Footer } from './Footer';
 
 const App = () => {
@@ -36,14 +36,14 @@ const App = () => {
           <section ref={sectionRefs[0]} id="home">
             <Parallax bgImage={imguvod} strength={300}>
               <div className="strip strip__one">
-                <StripContent />
+                <Home />
               </div>
               <div className="buble buble__one">
                 <Bubles />
               </div>
             </Parallax>
           </section>
-          <h1> </h1>
+
           <section ref={sectionRefs[1]} id="search">
             <Parallax bgImage={imgsearcher} strength={300}>
               <div className="search">
@@ -53,7 +53,7 @@ const App = () => {
               </div>
             </Parallax>
           </section>
-          <h1> </h1>
+
           <section ref={sectionRefs[2]} id="rules">
             <Parallax bgImage={imgrules} strength={300}>
               <div className="strip strip__two">
@@ -65,18 +65,16 @@ const App = () => {
               </div>
             </Parallax>
           </section>
-          <h1> </h1>
+
           <section ref={sectionRefs[3]} id="containers">
             <Parallax bgImage={imgcontainers} strength={300}>
               <Containers />
             </Parallax>
-            <h1> </h1>
           </section>
 
-          <h1> </h1>
           <section ref={sectionRefs[4]} id="footer">
             <Parallax strength={500}>
-              <div style={{ height: 300 }}>
+              <div>
                 <Footer />
               </div>
             </Parallax>
