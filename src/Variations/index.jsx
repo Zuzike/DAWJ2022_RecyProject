@@ -57,8 +57,8 @@ export const Variations = ({ group, onChangeGroup }) => {
               </div>
               <label>
                 <input
-                  onChange={onChange('red')}
-                  id="checkboxRed"
+                  onChange={onChange('green')}
+                  id="checkboxGreen"
                   className="variations__checkbox"
                   type="checkbox"
                 ></input>
@@ -86,8 +86,8 @@ export const Variations = ({ group, onChangeGroup }) => {
 
               <label>
                 <input
-                  onChange={onChange('green')}
-                  id="checkboxGreen"
+                  onChange={onChange('yellow')}
+                  id="checkboxYellow"
                   className="variations__checkbox"
                   type="checkbox"
                 ></input>
@@ -103,8 +103,8 @@ export const Variations = ({ group, onChangeGroup }) => {
               <label>
                 {' '}
                 <input
-                  onChange={onChange('yellow')}
-                  id="checkboxYellow"
+                  onChange={onChange('orange')}
+                  id="checkboxOrange"
                   className="variations__checkbox"
                   type="checkbox"
                 ></input>
@@ -120,8 +120,8 @@ export const Variations = ({ group, onChangeGroup }) => {
               <label>
                 {' '}
                 <input
-                  onChange={onChange('orange')}
-                  id="checkboxOrange"
+                  onChange={onChange('red')}
+                  id="checkboxRed"
                   className="variations__checkbox"
                   type="checkbox"
                 ></input>

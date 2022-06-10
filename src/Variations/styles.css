@@ -1,22 +1,3 @@
-.search__groups {
-  display: flex;
-  justify-content: space-evenly;
-}
-.variations__result {
-  width: 8rem;
-  height: 8rem;
-  font-size: 2rem;
-  background-color: rgba(81, 162, 14, 0.5);
-  border-radius: 10px;
-  align-self: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3rem;
-  margin: 1rem;
-  border-inline: 2px green dotted;
-}
-
 .search__variations {
   border: 1px black solid;
   border-radius: 15px;
@@ -28,34 +9,67 @@
   flex: 1;
 }
 
-.search__icon {
-  background-color: rgba(184, 184, 184, 0.3);
-  margin: 0.5rem;
-  padding: 0.5rem 1rem;
-  border-radius: 15px;
-}
-.variations__checkbox-slot {
-  display: flex;
-  flex-direction: column;
+@media (min-width: 700px) {
+  .search__groups {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .variations__result {
+    width: 8rem;
+    height: 8rem;
+    font-size: 2rem;
+    background-color: rgba(81, 162, 14, 0.5);
+    border-radius: 10px;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    margin: 1rem;
+    border-inline: 2px green dotted;
+  }
+  .search__variations {
+    max-width: 50%;
+    margin-right: 0;
+  }
+  .search__icon {
+    background-color: rgba(184, 184, 184, 0.3);
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+  }
+  .variations__checkbox-slot {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .variations__checkbox-slot--var {
+    display: flex;
+    justify-content: left;
+  }
+  .variations__checkbox,
+  label {
+    align-self: center;
+  }
+
+  .variations__groups {
+    text-align: left;
+    /* line-height: 1.4;*/
+  }
+  ul {
+    display: none;
+  }
+  .variations__note {
+    display: none;
+  }
 }
 
-.variations__checkbox-slot--var {
-  display: flex;
-  justify-content: left;
-}
-.variations__checkbox,
-label {
-  align-self: center;
-}
-
-ul {
-  list-style-position: inside;
-}
-.variations__groups {
-  text-align: left;
-  /* line-height: 1.4;*/
-}
-.variations__note {
-  font-size: 0.7rem;
-  text-align: center;
+@media (min-width: 1200px) {
+  ul {
+    list-style-position: inside;
+  }
+  .variations__note {
+    font-size: 0.7rem;
+    text-align: center;
+  }
 }

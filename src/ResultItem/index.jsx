@@ -155,12 +155,43 @@ export const ResultItem = ({ type, group }) => {
       </>
     );
   }
+  if (type === 'zberný dvor') {
+    return (
+      <>
+        <div className="search__result--bin">
+          <div className="search__icon">
+            <BinIcon color="red" width="60px" height="80px" />
+          </div>
+          <p>Zberný dvor</p>
+        </div>
+        <div className="search__result--notes">
+          <Notes type={type} />
+        </div>
+      </>
+    );
+  }
+  if (type === 'miesta spätného zberu') {
+    return (
+      <>
+        <div className="search__result--bin">
+          <div className="search__icon">
+            <BinIcon color="red" width="60px" height="80px" />
+          </div>
+          <p>Elektro - miesta spätného zberu</p>
+        </div>
+        <div className="search__result--notes">
+          <Notes type={type} />
+        </div>
+      </>
+    );
+  }
   if (type === 'nápojové kartóny' && group === 'A/D') {
     return (
       <>
         <div className="search__result--bin">
           <div className="search__icon">
             <BinIcon color="yellow" width="60px" height="80px" />
+            <BinIcon color="red" width="60px" height="80px" />
           </div>
 
           <p>Plast/Kovy</p>
@@ -233,7 +264,7 @@ export const ResultItem = ({ type, group }) => {
       </>
     );
   }
-  if (type === 'kovy' && (group === 'E' || group === 'A/D')) {
+  if (type === 'kovy' && group === 'E') {
     return (
       <>
         <div className="search__result--bin">
@@ -248,7 +279,22 @@ export const ResultItem = ({ type, group }) => {
       </>
     );
   }
-
+  if (type === 'kovy' && group === 'A/D') {
+    return (
+      <>
+        <div className="search__result--bin">
+          <div className="search__icon">
+            <BinIcon color="red" width="60px" height="80px" />
+            <BinIcon color="yellow" width="60px" height="80px" />
+          </div>
+          <p>Plast/Kovy</p>
+        </div>
+        <div className="search__result--notes">
+          <Notes type={type} />
+        </div>
+      </>
+    );
+  }
   return (
     <>
       <div className="search__result--bin">
