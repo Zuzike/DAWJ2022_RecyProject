@@ -1,23 +1,28 @@
 .search__form {
   border: 1px black solid;
   border-radius: 15px;
-  min-width: 30%;
-  max-width: 35%;
-  height: 80%;
   background-color: white;
   margin: 2rem;
-  flex: 1;
-  padding: 5rem;
+  padding: 1rem;
+  width: auto;
+}
+
+.search__bar {
+  text-align: left;
+  margin: 1.5rem 1rem;
+}
+
+.search__field {
+  margin-top: 3rem;
 }
 
 @media (min-width: 700px) {
   .search__form {
-    min-width: 50%;
+    max-width: 50%;
     margin-left: 0;
-  }
-
-  .search__bar {
-    text-align: left;
+    padding: 3rem 1rem 1rem 1rem;
+    flex: 1;
+    height: 80%;
   }
 
   .search__input {
@@ -31,6 +36,30 @@
   }
 
   .search__field {
-    margin-top: 5rem;
+    margin: 0;
+  }
+  .search__bar {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .search__form {
+    max-width: 50%;
+    height: 80%;
+    flex: 1;
+    padding: 4rem;
+    margin: 2rem;
+  }
+  .search__bar {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1700px) {
+  .search__form {
+    height: 70%;
+
+    flex: 1;
   }
 }

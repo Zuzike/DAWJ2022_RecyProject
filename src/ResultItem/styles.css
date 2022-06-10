@@ -1,5 +1,5 @@
 .search__result--notes {
-  padding: 2rem;
+  text-align: left;
 }
 
 .search__result--bin {
@@ -9,9 +9,6 @@
   align-items: center;
 }
 
-ul {
-  list-style-position: inside;
-}
 .search__result--text {
   list-style-type: disc;
   text-align: left;
@@ -23,4 +20,13 @@ ul {
   margin: 1rem;
   padding: 0.5rem 1rem;
   border-radius: 15px;
+}
+
+@media (min-width: 550px) {
+  .search__result--notes {
+    margin-left: 15px;
+  }
+}
+
+@media (min-width: 700px) {
 }

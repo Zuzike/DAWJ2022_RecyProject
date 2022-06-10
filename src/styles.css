@@ -11,15 +11,26 @@
 }
 
 .search {
-  display: flex;
-  height: 1300px;
-  justify-content: center;
-  align-items: center;
+  height: 180rem;
 }
 .footer__bottom {
   background-color: bisque;
   opacity: 0.5;
   margin: 0;
+}
+@media (min-width: 550px) {
+  .search {
+    height: 150rem;
+  }
+}
+@media (min-width: 700px) {
+  .search {
+    display: block;
+    display: flex;
+    height: 1300px;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media (min-width: 1200px) {
