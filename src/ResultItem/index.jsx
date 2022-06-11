@@ -1,8 +1,10 @@
 import React from 'react';
 import './styles.css';
 import { BinIcon } from '../icons/BinIcon';
-
+import { BioIcon } from '../icons/BioIcon';
 import { data } from '../../data';
+import { KompoIcon } from '../icons/KompoIcon';
+import { CarIcon } from '../icons/CarIcon';
 
 const Notes = ({ type }) => {
   return (
@@ -68,7 +70,7 @@ export const ResultItem = ({ type, group }) => {
       <>
         <div className="search__result--bin">
           <div className="search__icon">
-            <BinIcon color="braun" width="60px" height="80px" />
+            <BioIcon />
           </div>
           <p>Kuchynský bioodpad</p>
         </div>
@@ -83,7 +85,7 @@ export const ResultItem = ({ type, group }) => {
       <>
         <div className="search__result--bin">
           <div className="search__icon">
-            <BinIcon color="braun" width="60px" height="80px" />
+            <KompoIcon />
           </div>
 
           <p>Záhradný bioodpad</p>
@@ -99,7 +101,7 @@ export const ResultItem = ({ type, group }) => {
       <>
         <div className="search__result--bin">
           <div className="search__icon">
-            <BinIcon color="braun" width="60px" height="80px" />
+            <KompoIcon />
           </div>
 
           <p>Kompost</p>
@@ -129,7 +131,7 @@ export const ResultItem = ({ type, group }) => {
       <>
         <div className="search__result--bin">
           <div className="search__icon">
-            <BinIcon color="black" width="60px" height="80px" />
+            <CarIcon />
           </div>
 
           <p>Zberný dvor</p>
@@ -145,7 +147,7 @@ export const ResultItem = ({ type, group }) => {
       <>
         <div className="search__result--bin">
           <div className="search__icon">
-            <BinIcon color="red" width="60px" height="80px" />
+            <BinIcon color="purple" width="60px" height="80px" />
           </div>
           <p>Textil</p>
         </div>
@@ -155,27 +157,13 @@ export const ResultItem = ({ type, group }) => {
       </>
     );
   }
-  if (type === 'zberný dvor') {
-    return (
-      <>
-        <div className="search__result--bin">
-          <div className="search__icon">
-            <BinIcon color="red" width="60px" height="80px" />
-          </div>
-          <p>Zberný dvor</p>
-        </div>
-        <div className="search__result--notes">
-          <Notes type={type} />
-        </div>
-      </>
-    );
-  }
+
   if (type === 'miesta spätného zberu') {
     return (
       <>
         <div className="search__result--bin">
           <div className="search__icon">
-            <BinIcon color="red" width="60px" height="80px" />
+            <CarIcon />
           </div>
           <p>Elektro - miesta spätného zberu</p>
         </div>

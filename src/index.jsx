@@ -3,7 +3,6 @@ import { createRoot } from 'react-dom/client';
 import './styles.css';
 import { Parallax } from 'react-parallax';
 import imguvod from './img/trefaNaKos.jpg';
-import imgkontajnery from './img/kontajnery.jpg';
 import imgrules from './img/cajka.jpg';
 import imgsearcher from './img/papier.jpg';
 import imgcontainers from './img/kontajnery-velke.jpg';

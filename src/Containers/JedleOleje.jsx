@@ -22,8 +22,8 @@ export const JedleOleje = () => {
         ktoré už nie sú vhodné na konzumáciu. Oleje a tuky musia byť zbavené
         tuhých nečistôt a zvyškov jedál (preto je vhodné ich precediť cez sitko)
         a uložené v uzatvorenej čistej plastovej fľaši Olej nelejeme priamo do
-        zbernej nádoby -> vlejeme ho do čistej plastovej fľaše a tú umiestnime
-        do príslušnej nádoby na triedený zber oleja a tukov.
+        zbernej nádoby - vlejeme ho do čistej plastovej fľaše a tú umiestnime do
+        príslušnej nádoby na triedený zber oleja a tukov.
       </p>
     </div>
   );

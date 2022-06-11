@@ -43,7 +43,7 @@
   width: 2rem;
   height: 2rem;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .button_close:hover {

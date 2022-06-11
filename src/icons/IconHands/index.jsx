@@ -4,8 +4,8 @@ export const IconHands = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="152.429"
-      height="137.976"
+      width="102.429"
+      height="87.976"
       version="1.1"
       viewBox="0 0 152.429 137.976"
     >

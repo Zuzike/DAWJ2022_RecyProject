@@ -1,20 +1,28 @@
 import React from 'react';
+import { RecyIcon } from '../icons/RecyIcon';
+import { EarthIcon } from '../icons/EarthIcon';
 import './styles.css';
 
 export const Home = () => {
   return (
     <div className="uvod">
       <h1 className="strip__title"> Vyhľadávač odpadových nádob </h1>
+      <EarthIcon />
       <p className="strip__content">
-        Naučme sa správne vytriediť odpad, ktorý po nás denne ostáva. Často sa
-        nám stáva, že si nie sme istí, do akého kontajneru hodiť vec, ktorá nám
-        už doslúžila. Hoci na Slovensku máme systémy triedenia odpadov pestré ba
-        až zložité, triediť sa dá všade. Môže nám v tom pomôcť aj nasledujúci
-        vyhľadávač. Vyberte si z ponuky farebných kontajnerov tie, ktoré máte vo
-        svojom okolí k dispozícií a do okienka vyhľadávača zadajte názov veci,
-        ktorej sa chcete zbaviť. Vyhľadávač sa bude snažiť vybrať pre vás vhodný
-        kontajner.
+        Často sa nám stáva, že nevieme, do akého kontajneru hodiť vec, ktorá nám
+        už doslúžila. Vyhľadávač ti pomôže rýchlo nájsť ten správny kontajner.{' '}
       </p>
+      <p className="strip__content">
+        Na Slovensku máme troch zložitejšie systémy triedenia, tak na rôznych
+        miestach môžeš použiť tú istú nádobu na rôzny odpad.
+      </p>
+      <p className="strip__content strip__content--three">
+        V prvom kroku sa preto zaraď do skupiny a potom stačí zadať názov veci,
+        s ktorou si nevieš celkom rady. Vyhľadávač ti aj napovedá a bude sa
+        snažiť vybrať ten vhodný kontajner. Niekedy sa s odpadom dá naložiť
+        rôzne, preto ďalej na stránke nájdeš aj veľa užitočných informácií.
+      </p>
+      <RecyIcon />
     </div>
   );
 };

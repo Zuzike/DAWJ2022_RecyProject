@@ -44,10 +44,10 @@ export const Variations = ({ group, onChangeGroup }) => {
           Triedený zber odpadov na Slovensku nie je jednotný a odpady sa
           zbierajú v rôznych kombináciách.
           <br />
-          Zistite vo vedľajšom okienku aké máte možnosti zberných nádob vo vašom
+          Zisti v nasledujúcom okienku aké máš možnosti zberných nádob v tvojom
           okolí. <br />
-          Zakliknite políčko pri farebnej variante nádoby, ktoré u vás nájdete a
-          zaradíme Vás do patričnej skupiny.
+          Zaklikni políčko pri farebnej variante nádoby, ktoré u vás nájdete a
+          zaradíme ťa do patričnej skupiny.
         </p>
         <div className="search__groups">
           <div className="variations__checkbox-slot">
