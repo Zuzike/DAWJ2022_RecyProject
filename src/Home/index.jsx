@@ -10,7 +10,7 @@ export const Home = () => {
       <EarthIcon />
       <p className="strip__content">
         Často sa nám stáva, že nevieme, do akého kontajneru hodiť vec, ktorá nám
-        už doslúžila. Vyhľadávač ti pomôže rýchlo nájsť ten správny kontajner.{' '}
+        už doslúžila. Vyhľadávač ti pomôže rýchlo nájsť ten správny kontajner.
       </p>
       <p className="strip__content">
         Na Slovensku máme troch zložitejšie systémy triedenia, tak na rôznych

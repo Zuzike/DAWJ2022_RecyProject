@@ -11,6 +11,9 @@
   flex-direction: column;
   align-items: center;
 }
+li {
+  list-style: none;
+}
 
 a {
   text-decoration: none;
