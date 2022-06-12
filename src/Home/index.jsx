@@ -9,11 +9,11 @@ export const Home = () => {
       <h1 className="strip__title"> Vyhľadávač odpadových nádob </h1>
       <EarthIcon />
       <p className="strip__content">
-        Ak si v situácii, kedy vec ktorá chceš vytriediť a recyklovať vec, ktorá
-        už doslúžila, nie si si istí do ktorého kontajnera danú vec vyhodiť.
-        Nájdeš tu preto praktického pomocníka v podobe vyhľadávača, vďaka
-        ktorému môžeš kedykoľvek rýchlo zisťiť kam s odpadom, aby tvoje úsilie
-        malo zmysel.
+        Ak sa ocitneš v situácii, kedy chceš vytriediť a recyklovať vec, ktorá
+        už doslúžila a nie si si istí do ktorého kontajnera danú vec vyhodiť.
+        Nájdeš tu praktického pomocníka v podobe vyhľadávača, vďaka ktorému
+        môžeš kedykoľvek rýchlo zisťiť kam s odpadom, aby tvoje úsilie malo
+        zmysel.
       </p>
       <p className="strip__content">
         Na Slovensku máme trocha zložitejšie systémy triedenia odpadu, tak na
