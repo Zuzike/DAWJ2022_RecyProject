@@ -9,7 +9,7 @@ export const Home = () => {
       <h1 className="strip__title"> Vyhľadávač odpadových nádob </h1>
       <EarthIcon />
 
-      <p className="strip__content">
+      <p className="strip__content strip__content--one">
         Možno sa aj ty občas ocitneš v situácii, kedy chceš správne vytriediť a
         recyklovať vec, ktorá už doslúžila, ale nie si si istý do ktorého
         kontajnera danú vec vyhodiť. Tu nájdeš praktického pomocníka v podobe
@@ -17,7 +17,7 @@ export const Home = () => {
         aby tvoje úsilie malo zmysel.
       </p>
 
-      <p className="strip__content strip__content--three">
+      <p className="strip__content strip__content--two">
         Triedený zber odpadov na Slovensku nie je jednotný, odpady sa zbierajú v
         rôznych kombináciách.
         <br />
@@ -25,10 +25,11 @@ export const Home = () => {
         okolí k dispozícii. Vyhľadávač sa vzhľadom k tvojej kombinácii bude
         snažiť vybrať pre danú vec ten správny kontajner.
       </p>
-      <p className="strip__content">
+      <p className="strip__content  strip__content--three">
         Niekedy sa s odpadom dá naložiť rôzne, preto ďalej na stránke nájdeš aj
         veľa užitočných informácií.
       </p>
+      <br />
       <RecyIcon />
     </div>
   );
