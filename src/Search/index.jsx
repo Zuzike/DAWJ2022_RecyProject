@@ -26,7 +26,7 @@ export const Search = ({ group }) => {
             className="search__input"
             options={options}
             onChange={onChange}
-            placeholder="Čo chcete vyhodiť..."
+            placeholder="Čo chceš vyhodiť..."
           />
         </div>
         <div className="search__field">

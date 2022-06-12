@@ -283,14 +283,13 @@ export const data = [
     ],
 
     notes: [
-      'Plastové fľaše od nápojov bez označenia symbolom zálohovania, alebo so znehodnoteným, či poškodeným obalom alebo jeho časťou (prázdne, neznečistené, s dôrazom na minimalizáciu objemu stlačené).',
       'Plastové fľaše od kuchynského oleja vyhadzujeme prázdne, neznečistené, stlačené. Fľaše od oleja neumývame, olej do vody nepatrí – použitý, alebo starý kuchynský olej zlievame cez sitko do jednej takejto fľaše a odnesieme na miesta odberu.',
-      'Plastové obaly a kelímky od potravín  vyhadzujeme prázdne, neznečistené, stlačené, viečko odtrhneme a vyhodíme zvlášť, nakoľko ide často o iný materiál a iný spôsob recyklácie alebo zhodnotenia.',
+
       'POZOR! Polystyrénové tácky napr. od mäsa, mäsových výrobkov patria do ZMESOVÉHO ODPADU – ich tuk, šťava sa dostali do štruktúry plastu a znemožňujú recykláciu, ani dôkladné umytie nepomôže.',
       'Plastové obaly od liekov vyhadzuejme prázdne, bez liekov, zvyšné lieky vrátime do LEKÁRNE.',
       'Obalový polystyrén iba čistý, nesmie byť znečistený napr. jedlom – pri veľkom množstve však zaviezť na ZBERNÝ DVOR a nezapĺňať zbytočne kontajnery na zberných miestach.',
       'Platobné a vernostné karty - treba z nich odstrihnúť čip, ktorý patrí do ZMESOVÉHO ODPADU.',
-      'Patria sem aj zubné kefky s výnimkou tých, kde výrobca ponúka zber - tie môžeme vrátiť do predajne alebo na iné, výrobcom ponúkané miesto – napr. zubné kefky Curaprox (vyrábajú z nich koše na triedený odpad do škôl).',
+
       'Plastové obaly bývájú často označené „C/prevládajúca zložka“ (neznečistené, vyprázdnené, môžu byť aj kombinované s iným materiálom za podmienky, že plast je prevládajúca zložka).',
     ],
   },

@@ -8,23 +8,22 @@ export const Home = () => {
     <div className="uvod">
       <h1 className="strip__title"> Vyhľadávač odpadových nádob </h1>
       <EarthIcon />
+      <br />
       <p className="strip__content">
-        Ak sa ocitneš v situácii, kedy chceš vytriediť a recyklovať vec, ktorá
-        už doslúžila a nie si si istí do ktorého kontajnera danú vec vyhodiť.
-        Nájdeš tu praktického pomocníka v podobe vyhľadávača, vďaka ktorému
-        môžeš kedykoľvek rýchlo zisťiť kam s odpadom, aby tvoje úsilie malo
-        zmysel.
+        Možno sa aj ty občas ocitneš v situácii, kedy chceš správne vytriediť a
+        recyklovať vec, ktorá už doslúžila, ale nie si si istý do ktorého
+        kontajnera danú vec vyhodiť. Tu nájdeš praktického pomocníka v podobe
+        online vyhľadávača, vďaka ktorému môžeš kedykoľvek rýchlo zistiť kam s
+        odpadom, aby tvoje úsilie malo zmysel.
       </p>
-      <p className="strip__content">
-        Na Slovensku máme trocha zložitejšie systémy triedenia odpadu, tak na
-        rôznych miestach môžeš použiť tú istú nádobu na rôzny odpad.
-      </p>
+      <br />
       <p className="strip__content strip__content--three">
-        V prvom kroku sa preto zaraď do skupiny a potom stačí zadať názov veci,
-        s ktorou si nevieš celkom rady. Vyhľadávač ti aj napovedá a bude sa
-        snažiť vybrať ten vhodný kontajner. Niekedy sa s odpadom dá naložiť
-        rôzne, preto ďalej na stránke nájdeš aj veľa užitočných informácií.
+        Triedený zber odpadov na Slovensku nie je jednotný, odpady sa zbierajú v
+        rôznych kombináciách. Najprv si vyber z ponuky farebných kontajnerov
+        tie, ktoré máš vo svojom okolí k dispozícii. Vyhľadávač sa vzhľadom k
+        tvojej kombinácii bude snažiť vybrať pre danú vec ten správny kontajner.
       </p>
+      <br />
       <RecyIcon />
     </div>
   );

@@ -41,13 +41,12 @@ export const Variations = ({ group, onChangeGroup }) => {
       <section className="search__variations">
         <h2 className="variatons__title">Kombinácie zberu</h2>
         <p className="variations__text">
-          Triedený zber odpadov na Slovensku nie je jednotný a odpady sa
-          zbierajú v rôznych kombináciách.
-          <br />
-          Vyber si z ponuky farebných kontajnerov tie, ktoré máš vo svojom okolí
-          k dispozícií. V zelenom políčku sa objaví skupina, podľa ktorej sa
-          môžeš zorientovať.
+          Zaškrtni políčka s farebnými kontajnermi, ktoré máš k dispozícii.
+          Zelené okienko ti na základe tvojho výberu prezradí aký systém
+          triedenia je platný pre tvoju lokalitu. Do vyhľadávača zadaj, čo chceš
+          vyhodiť.
         </p>
+        <br />
         <div className="search__groups">
           <div className="variations__checkbox-slot">
             <div className="variations__checkbox-slot--var">
