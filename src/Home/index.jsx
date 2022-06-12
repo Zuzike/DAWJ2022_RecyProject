@@ -26,7 +26,7 @@ export const Home = () => {
         snažiť vybrať pre danú vec ten správny kontajner.
       </p>
       <p className="strip__content  strip__content--three">
-        Niekedy sa s odpadom dá naložiť rôzne, preto ďalej na stránke nájdeš aj
+        Niekedy sa s odpadom dá naložiť rôzne, preto nižšie na stránke nájdeš aj
         veľa užitočných informácií.
       </p>
       <br />
