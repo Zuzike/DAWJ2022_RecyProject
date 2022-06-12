@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.css';
-import czechitas from './img/czechitas_logo.png';
+import czechitas from './img/Czechitas_logo.png';
 
 export const Footer = () => {
   return (
