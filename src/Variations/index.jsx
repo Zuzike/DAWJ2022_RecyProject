@@ -43,8 +43,8 @@ export const Variations = ({ group, onChangeGroup }) => {
         <p className="variations__text">
           Zaškrtni políčka s farebnými kontajnermi, ktoré máš k dispozícii.
           Zelené okienko ti na základe tvojho výberu prezradí aký systém
-          triedenia je platný pre tvoju lokalitu. Do vyhľadávača zadaj, čo chceš
-          vyhodiť.
+          triedenia je platný pre tvoju lokalitu. Potom do vyhľadávača zadaj, čo
+          chceš vyhodiť.
         </p>
         <br />
         <div className="search__groups">

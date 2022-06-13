@@ -22,7 +22,7 @@ export const Home = () => {
         rôznych kombináciách.
         <br />
         Najprv si vyber z ponuky farebných kontajnerov tie, ktoré máš vo svojom
-        okolí k dispozícii. Vyhľadávač sa vzhľadom k tvojej kombinácii bude
+        okolí k dispozícii. Vyhľadávač sa, vzhľadom k tvojej kombinácii, bude
         snažiť vybrať pre danú vec ten správny kontajner.
       </p>
       <p className="strip__content  strip__content--three">
