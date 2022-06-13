@@ -5,6 +5,7 @@ import { BioIcon } from '../icons/BioIcon';
 import { data } from '../../data';
 import { KompoIcon } from '../icons/KompoIcon';
 import { CarIcon } from '../icons/CarIcon';
+import { PlastIcon } from '../icons/PlastIcon';
 
 const Notes = ({ type }) => {
   return (
@@ -272,10 +273,25 @@ export const ResultItem = ({ type, group }) => {
       <>
         <div className="search__result--bin">
           <div className="search__icon">
-            <BinIcon color="red" width="60px" height="80px" />
             <BinIcon color="yellow" width="60px" height="80px" />
+            <BinIcon color="red" width="60px" height="80px" />
           </div>
           <p>Plast/Kovy</p>
+        </div>
+        <div className="search__result--notes">
+          <Notes type={type} />
+        </div>
+      </>
+    );
+  }
+  if (type === 'zálohovanie') {
+    return (
+      <>
+        <div className="search__result--bin">
+          <div className="search__icon">
+            <PlastIcon color="red" width="60px" height="80px" />
+          </div>
+          <p>Automat/Zberné miesto</p>
         </div>
         <div className="search__result--notes">
           <Notes type={type} />

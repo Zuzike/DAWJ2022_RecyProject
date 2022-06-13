@@ -177,7 +177,7 @@ export const data = [
   },
 
   {
-    type: 'zálohovanie fliaš a plechoviek od nápojov',
+    type: 'zálohovanie',
     list: [
       'plastové nápojové fľaše označené symbolom a textom ZÁLOHOVANÉ',
       'nápojové plechovky označené symbolom a textom ZÁLOHOVANÉ',
